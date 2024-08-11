@@ -1,0 +1,27 @@
+.navbar {
+    position: absolute;
+    
+    right: 12px;
+    left: 12px;
+    background-color: var(--bg-oxford-blue);
+    padding: 0 15px;
+    
+  }
+
+  .navbar.active {
+    clip-path: var(--clip-path-2);
+    visibility: visible;
+  }
+  
+  .navbar-link {
+    padding: 12px 25px;
+    text-transform: uppercase;
+    font-size: var(--fontSize-7);
+    font-weight: var(--weight-semiBold);
+    color: var(--text-white);
+  }
+  
+  .navbar-item { border-block-start: 1px solid var(--border-space-cadet); }
+  
+  .navbar-item:last-child { border-block-end: 1px solid var(--border-space-cadet); }
+  

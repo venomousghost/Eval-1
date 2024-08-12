@@ -39,7 +39,7 @@ body{
     flex-direction: column;
 }
 
-.head-h1 {
+.main .head-h1 {
     background-image: linear-gradient(45deg, #f51bc6 32%,  #fe8616 54%, #d858f5 67%,red);
     -webkit-background-clip: text;
     color: transparent;
@@ -49,7 +49,7 @@ body{
     font-style: italic;
 }
 
-.head-h2 {
+.main .head-h2 {
     color: #f9f5f5;
     font-size: 60px;
     font-weight: 600;
@@ -92,11 +92,19 @@ body{
 }
 .slider .head{
     width: 50%;
-    color:#f9f5f5
+    height: 426px;
+    color:#f9f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .head h1{
+    font-size: 35px;
+    margin-bottom: 0px;
 }
 .slider .slide{
     width: 50%;
-    height: 100px;
+    height: 426px;
 }
 .carousel{
     min-width: 759px;
@@ -105,4 +113,34 @@ body{
 .carousel-inner > .item {
     position: relative;
     display: none;
+}
+.slider .head-h1{
+    background-image: linear-gradient(45deg, #f51bc6 32%,  #fe8616 54%, #d858f5 67%,red);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-style: italic;
+    line-height:90px;
+}
+.head-cover{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.slider .head p{
+    color: gray;
+}
+.slider .head button{
+    width: 90px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    background-image: linear-gradient(45deg, #f51bc6 32%,  #fe8616 54%, #d858f5 67%,red);
+    color: #f9f5f5;
+    font-weight: 600;
+    border: none;
+}
+.slider .head button:hover{
+    border: 1px solid white;
 }

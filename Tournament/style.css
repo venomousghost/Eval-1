@@ -24,7 +24,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100vh;
-    background-image: url('MainBG.jpeg');
+    background-image: url('https://wallpapercave.com/wp/wp4806803.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     /* filter: blur(4px);  */
@@ -139,6 +139,7 @@ body {
 .slider .head-h1 {
     background-image: linear-gradient(45deg, #f51bc6 32%, #fe8616 54%, #d858f5 67%, red);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     font-size: 70px;
     font-weight: 600;
@@ -189,12 +190,17 @@ body {
     font-family: sans-serif;
     color: #f9f5f5;
 }
-
+.caards{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
 .caard {
     background-color: #030c1a;
     color: #f9f5f5;
     width: 380px;
-    height: 470px;
+    height: 540px;
+    border: 1px solid whitesmoke;
 }
 
 .caard .immg {
@@ -204,7 +210,10 @@ body {
     height: 50%;
 
 }
-
+.caard img{
+    width:370px;
+    height: 250px;
+}
 .tournament .text {
     width: 100%;
     display: flex;
@@ -292,13 +301,27 @@ body {
     justify-content: center;
 
 }
-.btn{
+.btnn{
+    height: 52px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.btnn button:hover{
+    cursor: pointer;
+    border: 1px solid white;
+}
+.btnn button{
     background: linear-gradient(90deg, #071c3c 0%, #160f58 73%, #13069f 100%);
     color:whitesmoke;
     width: 50%;
+    height: 40px;
     align-items: center;
-    margin-left: 25%;
-    margin-top: 5px;
+    border: none;
+
 }
 .date{
     width: 100%;

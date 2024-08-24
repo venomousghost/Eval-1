@@ -4,6 +4,13 @@ body, ul {
   padding: 0;
   list-style: none;
 }
+.image{
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://wallpaperaccess.com/full/2096252.jpg');
+background-blend-mode: darken ;
+background-size:cover;
+background-position: center;
+backdrop-filter: blur(2px);
+}
 
 
 body {
@@ -11,15 +18,15 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://static.vecteezy.com/system/resources/previews/002/884/043/original/abstract-red-and-black-futuristic-gaming-background-in-livestream-free-vector.jpg');
-background-blend-mode: darken ;
-  background-size:cover;
+ 
+  
+ 
   
 }
 
 
 .navbar {
-  background-color:none;
+  background-color:black;
   color: #fff;
   top:0;
   left:0;
@@ -81,12 +88,14 @@ background-blend-mode: darken ;
 }
 .head1,.head2,.head3,.head4,.head5{ 
   padding: 2px;
-  border: 3px solid red;
+  border: none;
+ 
 }
 .text-head{
   color: #fff;
   text-align: center;
   font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 .sub-head1{
   background-image: url('https://images8.alphacoders.com/108/1080944.jpg');
@@ -105,8 +114,6 @@ background-blend-mode: darken ;
 .sub-head3{
   background-image: url('https://images.hdqwalls.com/wallpapers/cyberpunk-2077-2020-4k-game-0c.jpg');
   background-size: cover;
-
-  
   width:200px;
   height: 200px;
 }
@@ -121,3 +128,17 @@ background-blend-mode: darken ;
   height: 30px;
 }
 
+.section2{
+  padding: 20px 8%;
+  color: white;
+  
+}
+.section2 h2{
+  font-size: 30px;
+}
+.section3{
+  background-image:url('https://wallpapercave.com/wp/wp10327055.jpg') ;
+  background-size:cover ;
+  width: 100%;
+  height:300px;
+}

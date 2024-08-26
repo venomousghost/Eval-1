@@ -3,30 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
 </head>
 <body>
-    <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
+   
+    <div class="header">
+        <div class="logo-container">
+            <img src="https://png.pngtree.com/png-clipart/20220621/original/pngtree-assasin-gaming-logo-with-neon-light-png-image_8172651.png" alt="Logo" class="logo">
+            <span class="logo-text">Gaming UI</span>
+        </div>
+        <div class="menu">
+            <a href="#" class="link">
+                <span class="link-icon">
+                    <i class="fas fa-home"></i>
+                </span>
+                <span class="link-title">Home</span>
+            </a>
+            <a href="#" class="link">
+                <span class="link-icon">
+                    <i class="fas fa-gamepad"></i>
+                </span>
+                <span class="link-title">Games</span>
+            </a>
+            <a href="#" class="link">
+                <span class="link-icon">
+                    <i class="fas fa-comments"></i>
+                </span>
+                <span class="link-title">Chat</span>
+            </a>
+            <a href="#" class="link">
+                <span class="link-icon">
+                    <i class="fas fa-search"></i>
+                </span>
+                <span class="link-title">Search</span>
+            </a>
+            <a href="#" class="link">
+                <span class="link-icon">
+                    <i class="fas fa-user"></i>
+                </span>
+                <span class="link-title">Profile</span>
+            </a>
+        </div>
+    </div>
 
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>home</a>
-          </li>
+    
+    
 
-          <li class="navbar-item">
-            <a href="#tournament" class="navbar-link" data-nav-link>tournament</a>
-          </li>
+<section id="game-type-boxes">
+    <div class="flex">
+        <div class="box newest">
+            <div class="shade"></div>
+            <span class="badge new">New</span>
+            <div class="contents">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nihil!</p>
+                <a href="#" class="comments"> 13 Comments</a>
+            </div>
+        </div>
+        <div class="box strategy">
+            <div class="shade"></div>
+            <span class="badge strategy">New</span>
+            <div class="contents">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nihil!</p>
+                <a href="#" class="comments"> 3 Comments</a>
+            </div>
+        </div>
+        <div class="box rpg">
+            <div class="shade"></div>
+            <span class="badge rpg">New</span>
+            <div class="contents">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nihil!</p>
+                <a href="#" class="comments"> 3 Comments</a>
+            </div>
+        </div>
+        <div class="box racing">
+            <div class="shade"></div>
+            <span class="badge racing">New</span>
+            <div class="contents">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nihil!</p>
+                <a href="#" class="comments"> 3 Comments</a>
+            </div>
+        </div>
+    </div>
+</section>
 
-          <li class="navbar-item">
-            <a href="#news" class="navbar-link" data-nav-link>news</a>
-          </li>
+<section id="recent-games">
+    <h1>Recent Games</h1>
+    <div class="flex">
+        <div class="box">
+            <span class="badge new">New</span>
+            <img src="./images/Leonardo-recent1.jpg" class="leonardo">
+            <div class="box-lower-section">
+                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, dolorem. Quos, minus.</p>
+                <a href="#" class="comments">3 Comments</a>
+            </div>
+        </div>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>contact</a>
-          </li>
+        <div class="box">
+            <span class="badge racing">Racing</span>
+            <img src="./images/recent_games_2.jpg" alt="">
+            <div class="box-lower-section">
+                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, dolorem. Quos, minus.</p>
+                <a href="#" class="comments">3 Comments</a>
+            </div>
+        </div>
 
-        </ul>
-      </nav>
+        <div class="box">
+            <span class="badge adventure">Adventure</span>
+            <img src="./images/recent_games_3.jpg" alt="">
+            <div class="box-lower-section">
+                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, dolorem. Quos, minus.</p>
+                <a href="#" class="comments">3 Comments</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
 </body>
 </html>

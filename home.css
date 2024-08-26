@@ -1,27 +1,269 @@
-.navbar {
-    position: absolute;
-    
-    right: 12px;
-    left: 12px;
-    background-color: var(--bg-oxford-blue);
-    padding: 0 15px;
-    
-  }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-  .navbar.active {
-    clip-path: var(--clip-path-2);
-    visibility: visible;
-  }
-  
-  .navbar-link {
-    padding: 12px 25px;
-    text-transform: uppercase;
-    font-size: var(--fontSize-7);
-    font-weight: var(--weight-semiBold);
-    color: var(--text-white);
-  }
-  
-  .navbar-item { border-block-start: 1px solid var(--border-space-cadet); }
-  
-  .navbar-item:last-child { border-block-end: 1px solid var(--border-space-cadet); }
-  
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+}
+
+
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(7, 4, 4, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: space-between; /* Aligns logo and menu on the same line */
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 3px #464646;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff; /* Change text color for better contrast */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 99em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform-origin: center left;
+  transition: width 0.2s ease-in;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 1rem; /* Space between each link */
+}
+
+.link:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border-radius: 99em;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  background-color: #eee;
+}
+
+.link:hover, .link:focus {
+  outline: 0;
+  width: 130px;
+}
+
+.link:hover:before,
+.link:hover .link-title,
+.link:focus:before,
+.link:focus .link-title {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.link-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  flex-shrink: 0;
+  left: 18px;
+  position: absolute;
+  font-size: 1.5rem; /* Adjusted to match typical icon size */
+}
+
+.link-title {
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  display: block;
+  text-align: center;
+  text-indent: 28px;
+  width: 100%;
+}
+
+
+.flex {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  justify-content: space-between;
+}
+.logo img {
+  width: 100px;
+}
+.badge {
+  padding: 9px 20px;
+  color: #eee;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.75em;
+}
+.badge.new {
+  background-color: #ff205f;
+}
+.badge.strategy {
+  background-color: #4eae60;
+}
+.badge.racing {
+  background-color: #694eae;
+}
+
+.badge.rpg,
+.badge.adventure {
+  background-color: #40abf5;
+}
+.badge.tournaments {
+  background-color: #fb6e10;
+}
+.badge.premium-tournament {
+  background-color: #ffb320;
+  color: #252525;
+}
+
+#game-type-boxes {
+  margin-bottom: 75px;
+  margin-top: 50px;
+}
+
+#game-type-boxes .box {
+  flex-basis: 25%;
+  position: relative;
+  height: 380px;
+}
+
+#game-type-boxes .box.newest {
+  background: url("images/wowlady.jpg");
+  background-size: cover;
+}
+#game-type-boxes .box.strategy {
+  background: url("images/robotic\ ninja.jpg");
+  background-size: cover;
+}
+#game-type-boxes .box.rpg {
+  background: url("images/armedjeep.jpg");
+  background-size: cover;
+}
+#game-type-boxes .box.racing {
+  background: url("images/sportscar.jpg");
+  background-size: cover;
+}
+#game-type-boxes .box .badge {
+  position: relative;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+
+#game-type-boxes .box .contents {
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+  left: 0;
+  color: #eee;
+  padding: 0 35px 0 25px;
+}
+#game-type-boxes .box .contents a {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #999;
+}
+#game-type-boxes .box .contents a {
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #eee;
+}
+#game-type-boxes .box .contents h4 {
+  font-size: 1.8vmin;
+  color: #eee;
+}
+#game-type-boxes .racing .contents h4 {
+  font-size: 1.8vmin;
+  color: #ffb320;
+  font-weight: bold;
+}
+#game-type-boxes .racing .contents p {
+  color: #ffb320;
+  font-weight: bold;
+}
+#game-type-boxes .box .contents p {
+  font-size: 1.3vmin;
+}
+#recent-games {
+  background: url("images/recent_games_bg.png") top center no-repeat;
+  background-color: #eef2f6;
+  border-top: 1px solid #d6dee7;
+  border-bottom: 1px solid #d6dee7;
+  padding: 70px 0 120px;
+}
+
+#recent-games h1 {
+  text-align: center;
+}
+
+#recent-games .box {
+  position: relative;
+  flex-basis: 31%;
+  background-color: #fff;
+}
+#recent-games .box .badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+#recent-games .box img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#recent-games .box .box-lower-section {
+  padding: 20px;
+}
+#recent-games .box .box-lower-section p {
+  color: #999;
+}
+
+#recent-games .box .box-lower-section a {
+  color: #999;
+  font-size: 0.8em;
+}
+
+

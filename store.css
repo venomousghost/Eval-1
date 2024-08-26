@@ -5,11 +5,12 @@ body, ul {
   list-style: none;
 }
 .image{
-  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('https://wallpaperaccess.com/full/2096252.jpg');
+background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.hdqwalls.com/download/asus-rog-gamers-4k-bn-2560x1440.jpg');
 background-blend-mode: darken ;
 background-size:cover;
 background-position: center;
-backdrop-filter: blur(2px);
+
+
 }
 
 
@@ -117,6 +118,58 @@ body {
   width:200px;
   height: 200px;
 }
+.sub-head4{
+  background-image: url('https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/01/Resident-Evil-Village-Chris-Keyart.jpg');
+  background-size: cover;
+  background-position: center;
+  width:200px;
+  height: 200px;
+}
+.sub-head5{
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/17257.jpg');
+  background-size: cover;
+  background-position: center;
+  width:200px;
+  height: 200px;
+}
+.sub-head6{
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/17118.jpg');
+  background-size: cover;
+  background-position: center;
+  width:200px;
+  height: 200px;
+}
+.sub-head7{
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/16763.jpg');
+  background-size: cover;
+  background-position: center;
+  width:200px;
+  height: 200px;
+}
+.sub-head8{
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/16908.jpeg');
+  background-size: cover;
+  background-position: center;
+  width:200px;
+  height: 200px;
+}
+.sub-head9{
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/17911.jpg');
+  background-size: cover;
+  background-position: center;
+  width:200px;
+  height: 200px;
+}
+.sub-head10{
+  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/17105.jpg');
+  background-size: cover;
+  background-position: center;
+  width:200px;
+  height: 200px;
+}
+
+
+
 .sub-head img{
   background-size: cover;
 }
@@ -137,8 +190,15 @@ body {
   font-size: 30px;
 }
 .section3{
-  background-image:url('https://wallpapercave.com/wp/wp10327055.jpg') ;
+  background-image:url('http://www.pixelstalk.net/wp-content/uploads/2016/08/Dark-Wallpaper-Desktop-Background.jpg') ;
   background-size:cover ;
-  width: 100%;
+  width: 84%;
+  padding: 20px 8%;
+  color: #fff;
   height:300px;
+}
+.section3 img{
+  float: right;
+  height: 150px;
+  width:200px;
 }

@@ -10,8 +10,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url(swordmanbg.jpg) no-repeat center/cover;
+     background: url(swordmanbg.jpg) no-repeat center/cover;
 }
+
+
 .container form{
     width: 700px;
     height: 600px;
@@ -22,13 +24,44 @@
     background: rgba(255,255,255,0.1, );
     backdrop-filter: blur(10px);
     flex-wrap: wrap;
+  
 }
 .container form h1{
     color: #fff;
     font-weight: 500;
     margin-top: 20px;
     width: 500px;
+    border-width: 200px;
     text-align: center;
+    border-bottom:3px solid #fff ;
+    overflow: hidden;
+    box-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    animation: reveal 2s linear forwards;
+}
+@keyframes reveal{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    30%{
+        width: 500px;
+        height: 0px;
+    }
+    60%{
+        width: 500px;
+        height: 80px;
+    }
+    80%{
+        width: 500px;
+        height: 80px;
+        
+    }
+    100%{
+        width: 500px;
+        height: 80px;
+        
+        
+    }
 }
 .container form input{
     width: 290px;
@@ -37,7 +70,8 @@
     outline: none;
     border: none;
     font-size: 15px;
-    margin-bottom: 10px;background: none;
+    margin-bottom: 10px;
+    background: none;
     border-bottom: 2px solid #fff;
   
 }

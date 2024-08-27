@@ -5,8 +5,23 @@
 *:before {
   box-sizing: border-box;
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 
 body {
+  background-color: var(--bg-dark-purple); /* Fallback color */
+  background-image: url("images/body-bg.jpg");
+  background-repeat: repeat; /* Repeat the body background image */
+  background-size: cover; /* Ensure the body background covers the whole viewport */
+  color: var(--text-gainsboro);
   font-family: "Montserrat", sans-serif;
   line-height: 1.5;
   min-height: 100vh;
@@ -16,10 +31,12 @@ body {
 }
 
 
+
 .header {
   width: 100%;
   padding: 1rem;
-  background-color: rgba(7, 4, 4, 0.8); /* Semi-transparent background */
+  background: linear-gradient(90deg, rgba(7, 4, 4, 0.8), rgba(0, 0, 0, 0.8));
+  border-bottom: 3px solid #464646;
   display: flex;
   justify-content: space-between; /* Aligns logo and menu on the same line */
   align-items: center;
@@ -64,7 +81,7 @@ body {
   transition: width 0.2s ease-in;
   text-decoration: none;
   color: inherit;
-  margin-left: 1rem; /* Space between each link */
+  margin-left: 0rem; /* Space between each link */
 }
 
 .link:before {
@@ -79,7 +96,6 @@ body {
   transform: translateX(100%);
   transition: transform 0.2s ease-in;
   transform-origin: center right;
-  background-color: #eee;
 }
 
 .link:hover, .link:focus {
@@ -100,9 +116,10 @@ body {
   height: 28px;
   display: block;
   flex-shrink: 0;
+  color: white;
   left: 18px;
   position: absolute;
-  font-size: 1.5rem; /* Adjusted to match typical icon size */
+  font-size: 1.5rem; 
 }
 
 .link-title {
@@ -111,10 +128,16 @@ body {
   transform-origin: center right;
   display: block;
   text-align: center;
-  text-indent: 28px;
+  text-indent: 35px;
   width: 100%;
+  font-size: 1.1rem;
 }
 
+.link:hover,
+.link:focus {
+  background-color: #ff205f;
+  
+}
 
 .flex {
   display: flex;
@@ -225,9 +248,30 @@ body {
 #game-type-boxes .box .contents p {
   font-size: 1.3vmin;
 }
+#game-type-boxes .box {
+  position: relative;
+}
+
+#game-type-boxes .box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+  z-index: 1;
+}
+.box {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
 #recent-games {
-  background: url("images/recent_games_bg.png") top center no-repeat;
-  background-color: #eef2f6;
+  background-image: url("images/recent_games_bg.png"); /* Add your section background image */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Ensure the background image covers the section */
   border-top: 1px solid #d6dee7;
   border-bottom: 1px solid #d6dee7;
   padding: 70px 0 120px;

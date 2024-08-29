@@ -1,61 +1,125 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body, ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+.header {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(102, 110, 220, 0.8); /* Semi-transparent background */
+  display: flex;
+  justify-content: space-between; /* Aligns logo and menu on the same line */
+  align-items: center;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: solid 3px #464646;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff; /* Change text color for better contrast */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 50px;
+  border-radius: 99em;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transform-origin: center left;
+  transition: width 0.2s ease-in;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 1rem; /* Space between each link */
+}
+
+.link:before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  border-radius: 99em;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  background-color: #eee;
+}
+
+.link:hover, .link:focus {
+  outline: 0;
+  width: 130px;
+}
+
+.link:hover:before,
+.link:hover .link-title,
+.link:focus:before,
+.link:focus .link-title {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.link-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  flex-shrink: 0;
+  left: 18px;
+  position: absolute;
+  font-size: 1.5rem; 
+}
+
+.link-title {
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in;
+  transform-origin: center right;
+  display: block;
+  text-align: center;
+  text-indent: 28px;
+  width: 100%;
+  
+}
+
 .image{
 background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('https://images.hdqwalls.com/download/asus-rog-gamers-4k-bn-2560x1440.jpg');
 background-blend-mode: darken ;
 background-size:cover;
 background-position: center;
-
-
 }
-
-
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #f4f4f4;
- 
-  
- 
-  
-}
-
-
-.navbar {
-  background-color:black;
-  color: #fff;
-  top:0;
-  left:0;
-  padding: 20px 8%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar .logo {
-  font-size: 24px;
+  background-color: #f4f4f4; 
+  width: 100%;
+  height: 100%;
 
 }
 
-.navbar .nav-links {
-  display: flex;
-  gap: 32px;
-  font-size: 20px;
-}
-
-.navbar .nav-links a {
-  color: #fff;
-  text-decoration: none;
-}
-.nav-links li{
-  margin-left: 40px;
-  display: inline-block;
-}
 .hero {
   
   background-size: cover;
@@ -69,6 +133,7 @@ body {
  
 }
 
+
 .hero-content {
   max-width: 600px;
 }
@@ -78,101 +143,86 @@ body {
 .hero-content p{
   font-size: 20px;
 }
-.head{
-  padding:40px;
+.head {
+  padding: 40px;
   margin-left: 20px;
   margin-right: 20px;
- 
   display: flex;
   justify-content: space-around;
+}
 
-}
-.head1,.head2,.head3,.head4,.head5{ 
-  padding: 2px;
+.card { 
+  padding: 5px;
   border: none;
- 
+  width: 350px;
+  height: 500px;
+  position: relative;
+  overflow: hidden; 
 }
-.text-head{
-  color: #fff;
-  text-align: center;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-.sub-head1{
-  background-image: url('https://images8.alphacoders.com/108/1080944.jpg');
-  background-size: cover;
-  width:200px;
-  height: 200px;
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   
 }
-.sub-head2{
-  background-image: url('https://store-images.s-microsoft.com/image/apps.60323.14294656681058683.4d17bdd8-7026-429a-846f-cf7836bc9e56.a69e6905-8926-4a48-b243-14a039b97aae?mode=scale&q=90&h=1080&w=1920&format=jpg');
-  background-size: cover;
-  background-position: center;
-  width:200px;
-  height: 200px;
+
+.card-body {
+  width: 88%;
+  height: 91.5%;
+  top: 0;
+  right: -100%; 
+  position: absolute;
+  backdrop-filter: blur(5px);
+  color: #fff;
+  background: rgba(98, 104, 118, 0.6); 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: right 0.5s ease; 
 }
-.sub-head3{
-  background-image: url('https://images.hdqwalls.com/wallpapers/cyberpunk-2077-2020-4k-game-0c.jpg');
-  background-size: cover;
-  width:200px;
-  height: 200px;
+
+.card:hover .card-body {
+  right: 0; 
 }
-.sub-head4{
-  background-image: url('https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/01/Resident-Evil-Village-Chris-Keyart.jpg');
-  background-size: cover;
-  background-position: center;
-  width:200px;
-  height: 200px;
+
+.card-title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 500;
 }
-.sub-head5{
-  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/17257.jpg');
-  background-size: cover;
-  background-position: center;
-  width:200px;
-  height: 200px;
+
+.card-sub-title {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
 }
-.sub-head6{
-  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/17118.jpg');
-  background-size: cover;
-  background-position: center;
-  width:200px;
-  height: 200px;
+
+.card-info {
+  font-size: 16px;
+  line-height: 30px;
+  margin: 40px 0;
+  font-weight: 400;
 }
-.sub-head7{
-  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/16763.jpg');
-  background-size: cover;
-  background-position: center;
-  width:200px;
-  height: 200px;
-}
-.sub-head8{
-  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/16908.jpeg');
-  background-size: cover;
-  background-position: center;
-  width:200px;
-  height: 200px;
-}
-.sub-head9{
-  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/17911.jpg');
-  background-size: cover;
-  background-position: center;
-  width:200px;
-  height: 200px;
-}
-.sub-head10{
-  background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/17105.jpg');
-  background-size: cover;
-  background-position: center;
-  width:200px;
-  height: 200px;
+
+.card-btn {
+  color: rgb(255, 255, 255);
+  width: 120px;
+  margin-bottom: 35px;
+  height: 50px; /* Adjusted height */
+  background: rgb(9, 105, 131);
+  padding: 10px 20px; /* Adjusted padding */
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 
 
-.sub-head img{
-  background-size: cover;
-}
+
 .btn{
   background-color: rgb(171, 41, 41);
   border: none;
@@ -180,6 +230,19 @@ body {
   width:100px;
   height: 30px;
 }
+.btn1{
+  background-color: rgb(171, 41, 41);
+  border: none;
+  color: #fff;
+  width:150px;
+  height: 40px;
+  font-size: 20px;
+}
+
+.sub-head5 img{
+  overflow: hidden;
+}
+
 
 .section2{
   padding: 20px 8%;
@@ -197,8 +260,14 @@ body {
   color: #fff;
   height:300px;
 }
-.section3 img{
-  float: right;
-  height: 150px;
-  width:200px;
+.section3 {
+ display: flex;
+ justify-content: space-between;
+  height: 300px;
+  width:84%;
+}
+.sub-head1 img{
+  height:200px;
+  width:300px;
+  object-fit: cover;
 }

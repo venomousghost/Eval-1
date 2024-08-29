@@ -112,7 +112,13 @@ body {
     width: 100px;
   }
 
-
+  .flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
 .colaborator {
 
     background-image: url(back1.jpg);
@@ -384,16 +390,17 @@ body {
 }
 .row{
     width: 100vw;
-    height: 88vh;
+    height: 100vh;
     background-size: cover;
 }
-.carousel-bg1{
+.carousel-bg3{
     background-image: url(https://wallpapergod.com/images/hd/4k-gaming-7680X4800-wallpaper-y31a8hm3p7kpqjzt.jpeg);
 }
 
 .carousel-bg2{
-    background-image: url(https://wallpapers.com/images/hd/rocket-league-desktop-pwgu1cynwgge6wqu.jpg);
+    /* background-image: url(https://wallpapers.com/images/hd/rocket-league-desktop-pwgu1cynwgge6wqu.jpg); */
+    background-image: url(https://wallpapergod.com/images/hd/4k-gaming-3840X2160-wallpaper-1oshpobd2h6f82ae.jpeg);
 }
-.carousel-bg3{
-    background-image: url(MainBG2jpg.jpg);
+.carousel-bg1{
+    background-image: url(https://i.pinimg.com/originals/c3/91/a8/c391a8fd1db0e538735fda694bac31b5.jpg);
 }

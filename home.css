@@ -122,6 +122,52 @@ nav .navigation li a:hover{
 }
 
 
+nav .navigation li {
+    list-style: none;
+    margin-left: 30px;
+    position: relative;
+}
+
+nav .navigation li a:hover {
+    color: var(--btncolor);
+    transition: all 0.75s ease-out;
+}
+
+nav .navigation li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--backcolor);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    z-index: 10000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+nav .dropdown-menu li {
+    margin-left: 0;
+    width: 150px;
+}
+
+nav .dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    font-size: 1em;
+    color: var(--fontcolor);
+}
+
+nav .dropdown-menu li a:hover {
+    background-color: var(--btncolor);
+    color: #fff;
+}
+
+
+
 /* Slider */
 .slider {
     font-family: Poppins, sans-serif;
@@ -173,6 +219,8 @@ nav .navigation li a:hover{
 .item .content h2 {
     font-size: 4rem;
     margin: 0;
+    line-height: 1;
+    padding-bottom: 20px;
 }
 
 /* Slide navigation */

@@ -185,13 +185,13 @@ form.sign-in-form {
 
 .image {
   width: 105%;
-  transition: transform 1.1s ease-in-out;
-  transition-delay: 0.4s;
+ 
+  
 }
 
 #image-drag {
   position: relative;
-  bottom: 260px;
+  bottom: 140px;
 }
 
 .panel {

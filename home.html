@@ -3,130 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+    <nav>
+        <a href="#" class="logo">
+            <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>Gaming<span>UI</span>
+        </a>
+        <div class="menuToggle" onclick="toggleMenu()">
+        </div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+            <li><a href="about us page.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="#games" onclick="toggleMenu()">Store</a></li>
+            <li><a href="contact page/contact2.html" onclick="toggleMenu()">Contact</a></li>
+            <li class="dropdown">
+                <a href="#more" onclick="toggleMenu()">More</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#option1" onclick="toggleMenu()">Option 1</a></li>
+                    <li><a href="#option2" onclick="toggleMenu()">Option 2</a></li>
+                    <li><a href="#option3" onclick="toggleMenu()">Option 3</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
    
-    <div class="header">
-        <div class="logo-container">
-            <img src="https://png.pngtree.com/png-clipart/20220621/original/pngtree-assasin-gaming-logo-with-neon-light-png-image_8172651.png" alt="Logo" class="logo">
-            <span class="logo-text">Gaming UI</span>
+
+    <!-- slider -->
+    <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
+
+        <div class="slides">
+            <div class="item" id="slide1-content">
+                <img src="https://wallpapercave.com/wp/wp5029421.jpg">
+                <div class="content">
+                    <p>Design</p>
+                    <h2>Cyberpunk </h2>
+                    <p>
+                        Cyberpunk 2077 is an open-world, a megalopolis obsessed with power, glamour, and body modification. Take on the most powerful forces of the city in a fight for glory and survival.
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="slide2-content">
+                <img src="https://wallpapercave.com/wp/wp3770576.jpg">
+                <div class="content">
+                    <p>Design</p>
+                    <h2>Red Dead Redemption 2</h2>
+                    <p>
+                        Red Dead Redemption 2 is an epic tale of honor and loyalty at the dawn of the modern age. Includes Red Dead Redemption 2: Story Mode and Red Dead Online.
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="slide3-content">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Falan-wake-2-hd-gaming_bWZlam2UmZqaraWkpJRobWllrWdma2U.jpg&f=1&nofb=1&ipt=3336c6f77fb0cb857dd0b6e3ecd786697cd53f0d8e475cac272b7c14f2b0b4d0&ipo=images">
+                <div class="content">
+                    <p>Design</p>
+                    <h2>Alan Wake 2</h2>
+                    <p>
+                        Saga Anderson arrives to investigate ritualistic murders in a small town. Alan Wake pens a dark story to shape the reality around him. These two heroes are somehow connected.
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="slide4-content">
+                <img src="https://rare-gallery.com/mocahbig/392395-elden-ring-game-tarnished-warrior-4k-pc-wallpaper.jpg">
+                <div class="content">
+                    <p>Design</p>
+                    <h2>Elden Ring</h2>
+                    <p>
+                        ELDEN RING is a fantasy RPG game by FromSoftware and George R. R. Martin, set in the Lands Between. Pre-order now and get exclusive bonuses, editions, and expansions.
+                    </p>
+                </div>
+            </div>
+            <div class="item" id="slide5-content">
+                <img src="https://images.hdqwalls.com/download/the-last-of-us-video-game-4k-n3-3840x2160.jpg">
+                <div class="content">
+                    <p>Design</p>
+                    <h2>The last of us : Part 1</h2>
+                    <p>
+                        Experience the emotional storytelling and unforgettable characters in The Last of Us™, winner of over 200 Game of the Year awards.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="menu">
-            <a href="#" class="link">
-                <span class="link-icon">
-                    <i class="fas fa-home"></i>
-                </span>
-                <span class="link-title">Home</span>
-            </a>
-            <a href="#" class="link">
-                <span class="link-icon">
-                    <i class="fas fa-gamepad"></i>
-                </span>
-                <span class="link-title">Games</span>
-            </a>
-            <a href="#" class="link">
-                <span class="link-icon">
-                    <i class="fas fa-comments"></i>
-                </span>
-                <span class="link-title">Chat</span>
-            </a>
-            <a href="#" class="link">
-                <span class="link-icon">
-                    <i class="fas fa-search"></i>
-                </span>
-                <span class="link-title">Search</span>
-            </a>
-            <a href="#" class="link">
-                <span class="link-icon">
-                    <i class="fas fa-user"></i>
-                </span>
-                <span class="link-title">Profile</span>
-            </a>
+
+        <!-- Thumbnail navigation -->
+        <div class="thumbnail">
+            <label class="item" for="slide1">
+                <img src="https://hdqwalls.com/wallpapers/2018-cyberpunk-2077-4k-n6.jpg">
+                <div class="content">Cyberpunk 2077</div>
+            </label>
+            <label class="item" for="slide2">
+                <img src="https://wallpaperaccess.com/full/2377328.jpg">
+                <div class="content">Red Dead Redemption 2</div>
+            </label>
+            <label class="item" for="slide3">
+                <img src="https://wallpapercave.com/wp/wp13002792.jpg">
+                <div class="content">Alan Wake 2</div>
+            </label>
+            <label class="item" for="slide4">
+                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4kwallpapers.com%2Fimages%2Fwallpapers%2Felden-ring-pc-games-playstation-4-playstation-5-xbox-one-2880x1800-7712.jpg&f=1&nofb=1&ipt=fcaf4f0503b2968a13087e5877b941c2fa3e45c5878ad416b9f6c5aeb9a25f02&ipo=images">
+                <div class="content">Elden Ring</div>
+            </label>
+            <label class="item" for="slide5">
+                <img src="https://images.hdqwalls.com/wallpapers/the-last-of-us-part-2-4k-2020-6b.jpg">
+                <div class="content">The last of us : Part 1</div>
+            </label>
         </div>
     </div>
-
-    
-    
-
-<section id="game-type-boxes">
-    <div class="flex">
-        <div class="box newest">
-            <div class="shade"></div>
-            <span class="badge new">New</span>
-            <div class="contents">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nihil!</p>
-                <a href="#" class="comments"> 13 Comments</a>
-            </div>
-        </div>
-        <div class="box strategy">
-            <div class="shade"></div>
-            <span class="badge strategy">New</span>
-            <div class="contents">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nihil!</p>
-                <a href="#" class="comments"> 3 Comments</a>
-            </div>
-        </div>
-        <div class="box rpg">
-            <div class="shade"></div>
-            <span class="badge rpg">New</span>
-            <div class="contents">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nihil!</p>
-                <a href="#" class="comments"> 3 Comments</a>
-            </div>
-        </div>
-        <div class="box racing">
-            <div class="shade"></div>
-            <span class="badge racing">New</span>
-            <div class="contents">
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, nihil!</p>
-                <a href="#" class="comments"> 3 Comments</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="recent-games">
-    <h1>Recent Games</h1>
-    <div class="flex">
-        <div class="box">
-            <span class="badge new">New</span>
-            <img src="./images/Leonardo-recent1.jpg" class="leonardo">
-            <div class="box-lower-section">
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, dolorem. Quos, minus.</p>
-                <a href="#" class="comments">3 Comments</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="badge racing">Racing</span>
-            <img src="./images/recent_games_2.jpg" alt="">
-            <div class="box-lower-section">
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, dolorem. Quos, minus.</p>
-                <a href="#" class="comments">3 Comments</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <span class="badge adventure">Adventure</span>
-            <img src="./images/recent_games_3.jpg" alt="">
-            <div class="box-lower-section">
-                <h4>Lorem ipsum dolor sit amet consectetur.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, dolorem. Quos, minus.</p>
-                <a href="#" class="comments">3 Comments</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
 </body>
 </html>

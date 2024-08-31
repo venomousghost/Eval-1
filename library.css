@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+ background-color: black;
+ color: white;
+  
+  
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 4px;
+}
+.nav2 ul{
+    display: flex;
+    gap:20px;
+  
+}
+.nav2 li{
+    list-style: none;
+    font-size: 25px;
+    
+}
+
+
+
+.search-input {
+    width: 250px;
+    height:20px;
+    color:white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 15px;
+    background-color: #211e1e;
+}
+
+.search-input:hover {
+    background: rgba(128, 127, 127, 0.288);
+}
+.main{
+    padding: 20px ;
+}
+
+
+
+

@@ -2,23 +2,103 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Us</title>
     <link rel="stylesheet" href="style2.css">
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+ </head>
 <body>
+    <section>
+        <nav>
+            <a href="#" class="logo">
+                <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>Gaming<span>UI</span>
+            </a>
+            <div class="menuToggle" onclick="toggleMenu()">
+            </div>
+            <ul class="navigation">
+                <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+                <li><a href="about us page.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="#games" onclick="toggleMenu()">Store</a></li>
+                <li><a href="contact page/contact2.html" onclick="toggleMenu()">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#more" onclick="toggleMenu()">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#option1" onclick="toggleMenu()">Option 1</a></li>
+                        <li><a href="#option2" onclick="toggleMenu()">Option 2</a></li>
+                        <li><a href="#option3" onclick="toggleMenu()">Option 3</a></li>
+                    </ul>
+                </li>
+    
+            </ul>
+        </nav>
     <div class="container">
-        <form>
-            <h1>Contact Us </h1>
-            <input type="text" id="firstname" placeholder="First name" required>
-            <input type="text" id="lastname" placeholder="Last name" required>
-            <input type="email" id="email" placeholder="Email" required>
-            <input type="text" id="mobile" placeholder="Mobile" required>
-            <h4>Type Your Message Here</h4>
-            <textarea required></textarea>
-            <input type="submit" value="send" id="button">
-        </form>
-        
+        <div class="imgbox"><img src="https://static.vecteezy.com/system/resources/previews/022/255/828/non_2x/portrait-of-a-male-gamer-playing-online-games-on-a-computer-cyber-sport-concept-generative-ai-free-photo.jpg"></div>
+        <div class="content">
+            <div class="heading"><h1>Contact Us</h1></div>
+            <div class="form">
+                <div class="text">
+                    <form>
+                        <input type="text" id="fullname" placeholder="Full name" required>
+                        <input type="text" id="email" placeholder="E-mail" required>
+                        <input type="text" id="message" placeholder="Message" required><br>
+                        <button type="button">Contact Us</button>
+                    </form>
+                </div>
+                <div class="text2">
+                    <h3>Contact</h3>
+                    <p>GamingUI@gmail.com</p><br><br>
+                    <h3>Based in</h3>
+                    <p>Rajpura,<br>Punjab, India</p>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook fa-2xl"></i>
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div class="footer-body">
+            <div class="box">
+            <div class="logo footer-logo">
+                <img src="https://www.pngall.com/wp-content/uploads/5/Game-Controller-PNG-Clipart.png" width="50px">
+                <h1>Gaming UI</h1>
+            </div>
+            <div class="about">
+                <p>Gaming UI is a digital distribution platform that puts gamers first and respects their need to own games.</p>
+            </div>
+            </div>
+            <ul>
+                <h3>Short Links</h3>
+                <li><a href="#">Arcade</a></li>
+                <li><a href="#">War Zone</a></li>
+                <li><a href="#">Fifa Game</a></li>
+                <li><a href="#">Pes 2020</a></li>
+                <li><a href="#">Xbox Game</a></li>
+            </ul>
+
+            <ul>
+                <h3>Action Games</h3>
+                <li><a href="#">Anpar</a></li>
+                <li><a href="#">BattleField</a></li>
+                <li><a href="#">The Ghost</a></li>
+                <li><a href="#">Fortnite</a></li>
+                <li><a href="#">Cold War</a></li>
+            </ul>
+            <ul>
+                <h3>Get In Touch</h3>
+                <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p>Copyright &copy; All Right Reserved | Designed <span>By Team UI</span> 2024</p>
     </div>
 </body>
 </html>

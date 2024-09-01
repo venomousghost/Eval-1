@@ -10,6 +10,9 @@ body {
     justify-content: space-around;
     padding: 20px 4px;
 }
+.nav1{
+margin-right: 24px;
+}
 .nav2 ul{
     display: flex;
     gap:20px;
@@ -37,12 +40,76 @@ body {
 }
 
 .search-input:hover {
-    background: rgba(128, 127, 127, 0.288);
+    background: rgba(128, 127, 127, 0.4);
 }
 .main{
-    padding: 20px ;
+    display: flex;
+    padding: 20px;
+}
+.sub-main{
+  
+    margin: 25px;
+}
+.sub-head1{
+    padding: 25px;
+    background-color: black;
+    width: 250px;
+    height:50px;
+    border-radius: 20px;
+   align-items: center;
+   text-align:center;
+   font-size: 30px;
+   color: grey;
+  
+}
+.sub-head1:hover{
+    background-color:  rgba(186, 123, 123, 0.288);
+    color: white;
 }
 
+
+.sub-part1 ul{
+    color: gray;
+    display: flex;
+    list-style: none;
+    font-size: 25px;
+    gap: 50px;  
+}
+
+.sub-part1 ul li:hover{
+color:white;
+}
+.sub-part2{
+    padding: 25px;
+    font-size:23px ;
+    color: gray;
+    font-weight:500;
+}
+.sub-part2 p{
+    font-size: 21px;
+}
+#dropdown{
+    height:33px;
+    width: 200px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 21px;
+    
+}
+.card{
+    width:250px;
+    height:350px;
+    background-color:aqua ;
+}
+.card img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+.sub-title{
+    font-size: 22px;
+}
 
 
 

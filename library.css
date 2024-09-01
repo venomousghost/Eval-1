@@ -13,12 +13,12 @@ body {
 .nav1{
 margin-right: 24px;
 }
-.nav2 ul{
+.nav-2 ul{
     display: flex;
     gap:20px;
   
 }
-.nav2 li{
+.nav-2 li{
     list-style: none;
     font-size: 25px;
     
@@ -67,6 +67,14 @@ margin-right: 24px;
     color: white;
 }
 
+.word1{
+    font-size: 50px;
+    padding: 25px;
+    font-weight: bold;
+}
+.sub-main1{
+    width:60%; 
+}
 
 .sub-part1 ul{
     color: gray;
@@ -88,6 +96,10 @@ color:white;
 .sub-part2 p{
     font-size: 21px;
 }
+.sub-part3{
+    display: flex;
+    gap:50px
+}
 #dropdown{
     height:33px;
     width: 200px;
@@ -107,8 +119,47 @@ color:white;
     height:100%;
     object-fit: cover;
 }
-.sub-title{
-    font-size: 22px;
+.text{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 23px;
+    font-weight: 600;
+    list-style: none;
+}
+#dropdown1{
+    height:30px;
+    width: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 21px;
+}
+.word{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 600;
+}
+.word2{
+    font-size: 30px;
+}
+.sub-main2{
+    margin-top: 200px;
+}
+.search-input1{
+    width: 300px;
+    height:20px;
+    color:white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  
+    outline: none;
+    margin-top: 15px;
+    background-color: #211e1e;
+}
+.nav-3{
+    margin-top: 20px;
 }
 
 

@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Maven+Pro:wght@900&family=Roboto:wght@500&family=Ubuntu:wght@700&display=swap');
+
+:root{
+    
+    --backcolor:#12181c;
+    --fontcolor:#eeeae1;
+    --btncolor:#00FFFF;
+    --fadecolor:#238888;
+    --ccolor:linear-gradient(221deg, #212121 28%, #00c1c1 100%);
+    --h2font:'Dosis';
+    --pfont:'Roboto', sans-serif;
+    --logofont:'Maven Pro', sans-serif;
+    --navfont:'Ubuntu';
+    --titletext:'Dosis';
+}
 *{
     margin: 0;padding: 0;
     font-family: sans-serif;
@@ -9,9 +25,109 @@ section{
     color: #fff;
 }
 .container{
-    padding: 100px 380px 0 380px;
+    padding: 100px 200px 0 280px;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 19px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:10000;
+    transition: 0.75s;
+    
+}
+
+nav.sticky{
+    background: var(--backcolor);
+    padding: 19px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+nav .logo{
+    font-family: var(--logofont);
+    color: var(--fontcolor);
+    text-decoration: none;
+    font-size: 2em;
+}
+
+nav .logo box-icon{
+    margin-right:5px;
+}
+nav .logo span{
+    margin-left: 5px;
+    color: var(--btncolor);
+}
+
+nav .navigation{
+    position: relative;
+    display: flex;
+}
+
+nav .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation li a {
+    font-family: var(--navfont);
+    color: var(--fontcolor);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.75s ease-in;
+}
+nav .navigation li a:hover{
+    color: var(--btncolor);
+    transition: all 0.75s ease-out;
+
+}
+
+nav .navigation li {
+    list-style: none;
+    margin-left: 30px;
+    position: relative;
+}
+
+nav .navigation li a:hover {
+    color: var(--btncolor);
+    transition: all 0.75s ease-out;
+}
+
+nav .navigation li.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--backcolor);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    z-index: 10000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+nav .dropdown-menu li {
+    margin-left: 0;
+    width: 150px;
+}
+
+nav .dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    font-size: 1em;
+    color: var(--fontcolor);
+}
+
+nav .dropdown-menu li a:hover {
+    background-color: var(--btncolor);
+    color: #fff;
+}
 .box{
     display: flex;
 }
@@ -19,7 +135,7 @@ section{
 .cart-head h1{
     color: #fff;
     padding: 0px 0 10px 20px;
-    font-size: 45px;
+    font-size: 40px;
     align-items: center;
 }
 .redline{
@@ -35,18 +151,19 @@ section{
     justify-content: center;
     margin-left: 80px;
 }
+
 .box1 {
     display: flex;
 }
 .li{
     border: 1px solid #353a40;
-    width: 900px;
+    width: 1030px;
 }
 
 .box1 .img{
     background: #232930;
     padding: 10px 20px ;
-    height: 180px;
+    height: 120px;
     align-items: center;
 }
 .box2 img:hover{
@@ -56,7 +173,7 @@ section{
 .btn button{
     padding: 10px 15px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 15px;
     margin: 1% 0% 1% 86% ;
     cursor: pointer;
     border: #353a40;
@@ -67,7 +184,7 @@ select{
     border-radius: 10px;
     border: none;
     font-size: 18px;
-    width: 500px;
+    width: 450px;
     border: 1px solid #353a40;
     background: #232930;
     color: #fff;
@@ -84,10 +201,9 @@ input{
     margin-right:14px;
 }
 .lower{
-    position: absolute;
-    left: 20%;
-    top: 75%;
+    margin:1% 0 0 20%;
     display: flex;
+    
 }
 .btn2 button{
     padding: 10px 15px;
@@ -98,10 +214,10 @@ input{
     cursor: pointer;
 }
 .ship h1{
-    font-size: 30px;
+    font-size: 25px;
 }
 .ship p{
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px 0 20px 0;
 }
 .ship span{
@@ -111,17 +227,17 @@ input{
     margin-left: 20px;
 }
 .total2 h1{
-    font-size: 30px;
+    font-size: 25px;
     padding-bottom: 20px;
 }
 .line{
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
     width: 600px;
 }
 .boxx{
     height: 50px;
-    width: 220px;
+    width: 150px;
 background: #353a40;
 text-align: center;
 padding: 25px 15px 0 15px;
@@ -129,7 +245,7 @@ margin-right: 1px;
 }
 .boxx1{
     height: 50px;
-    width: 330px;
+    width: 270px;
     background: #353a40;
     text-align: center;
     padding: 25px 20px 0 20px;
@@ -137,13 +253,13 @@ margin-right: 1px;
 .line2{
     width: 600px;
     display: flex;
-    font-size: 20px;
+    font-size: 15px;
 }
 .btn3{
-    margin-left: 400px;
+    margin-left: 300px;
 }
 .btn3 button{
-    margin-top: 30px;
+    margin: 30px 0 30px 0;
     background: rgb(232, 22, 22);
     color: #fff;
     font-weight: 600;
@@ -166,7 +282,7 @@ margin-right: 1px;
 }
 .box2{
     height: 180px;
-    width: 1100px;
+    width: 1000px;
     background: #232930;
     display: flex;
     padding: 20px;
@@ -182,51 +298,123 @@ margin-right: 1px;
     
 }
 .product{
-    width: 420px;
-    height: 40px;
+    width: 300px;
+    height: 30px;
     padding: 20px 0px 20px 30px;
 }
 .price{
-    width: 170px;
-    height: 40px;
+    width: 150px;
+    height: 30px;
     padding: 20px 0px 20px 0px;
     text-align: center;
 }
 .quantity{
-    width: 170px;
-    height: 40px;
+    width: 150px;
+    height: 30px;
     padding: 20px 0px 20px 0px;
     text-align: center;
 }
 .total{
-    width: 170px;
-    height: 40px;
+    width: 150px;
+    height: 30px;
     padding: 20px 0px 20px 0px;
     text-align: center;
+    padding: 20px 0px 20px 0px;
 }
 .product1{
-    width: 420px;
+    width: 300px;
     height: 40px;
     padding: 20px 0px 20px 30px;
 
 }
 .price1{
-    width: 170px;
+    width: 150px;
     height: 40px;
     padding: 20px 0px 20px 0px;
     text-align: center;
 }
 .quantity1{
-    width: 170px;
-    height: 40px;
+    width: 150px;
+    height: 30px;
     border: 1px solid #353a40;
     padding-top: 20px;
     border-radius: 5px;
     text-align: center;
 }
 .total1{
-    width: 170px;
-    height: 40px;
+    width: 150px;
+    height: 30px;
     padding: 20px 0px 20px 20px;
     text-align: center;
+}
+
+footer{
+    width: 100%;
+    height: 45vh;
+    background: #282828;
+    display: flex;
+    align-items: center;
+    
+}
+.footer-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.boxlast{
+    width: 300px;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.5;
+}
+.footer-logo{
+    height: 12vh;
+    background-color: #00FFFF;
+    color: #000;
+    line-height: 1.7rem;
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+    margin:0 0 20px 20px;
+}
+.footer-logo:hover{
+    transform: scale(1.1);
+}
+ul h4{
+    color: #00ffff;
+    font-weight: 450;
+}
+ul li{
+    list-style: none;
+    line-height: 2.5rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a .fab{
+    font-size: 1.2rem;
+    color: #00FFFF;
+    margin-right: 15px;
+}
+ul li a:hover{
+    color: #00FFFF;
+}
+.footer-bottom{
+    width: 100%;
+    height: 7vh;
+    background: #1B1919;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+.footer-bottom span{
+    color: #00FFFF;
+    font-weight: bold;
 }

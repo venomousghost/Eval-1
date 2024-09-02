@@ -601,8 +601,21 @@ body {
     color: #ffffff;
     background-color: #071c3c;
 }
-
-
+.parralax .text .btn:hover{
+    padding: 12px 20px;
+    width: 150px;
+    background-color: #ffffff;
+    color: #071c3c;
+}
+.parralax .text .btn a{
+   text-decoration: none;
+   color: white;
+}
+.parralax .text .btn:hover a{
+    text-decoration: none;
+    color: #071c3c;
+ }
+ 
 
 
 .track-outer{

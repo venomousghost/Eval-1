@@ -154,8 +154,8 @@ body {
 .card { 
   padding: 5px;
   border: none;
-  width: 350px;
-  height: 500px;
+  width: 260px;
+  height: 400px;
   position: relative;
   overflow: hidden; 
 }
@@ -168,8 +168,8 @@ body {
 }
 
 .card-body {
-  width: 88%;
-  height: 91.5%;
+  width: 85%;
+  height: 89%;
   top: 0;
   right: -100%; 
   position: absolute;
@@ -180,7 +180,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: right 0.5s ease; 
+  transition: right .6s ease; 
 }
 
 .card:hover .card-body {
@@ -189,18 +189,14 @@ body {
 
 .card-title {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
 }
 
-.card-sub-title {
-  text-transform: capitalize;
-  font-size: 14px;
-  font-weight: 300;
-}
+
 
 .card-info {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 30px;
   margin: 40px 0;
   font-weight: 400;
@@ -210,9 +206,9 @@ body {
   color: rgb(255, 255, 255);
   width: 120px;
   margin-bottom: 35px;
-  height: 50px; /* Adjusted height */
+  height: 50px; 
   background: rgb(9, 105, 131);
-  padding: 10px 20px; /* Adjusted padding */
+  padding: 10px 20px; 
   text-transform: capitalize;
   border: none;
   outline: none;

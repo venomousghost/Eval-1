@@ -264,6 +264,7 @@ body {
     width: 32%;
     height: 386px;
     border: 1px solid whitesmoke;
+    z-index: 0;
 }
 
 .caard .immg {
@@ -405,23 +406,25 @@ body {
     color: whitesmoke;
     width: 50%;
     height: 40px;
+    margin-left: 120px;
+    opacity: 0;
     align-items: center;
     border: none;
-    top: 150px;
-    left: 120px;
-    position: relative;
-    display: none;
+    z-index: 1;
+    transition: opacity 0.9s, z-index 0.9s;
 } 
 .caard:hover{
-    opacity: 0.5;
+    z-index: 0;
     cursor: pointer;
-    filter: grayscale(80%);
-}
-.caard button:hover{
-
-    display: inline;
+    filter: grayscale(70%);
 }
 
+.caard:hover button{
+    filter: none;
+    z-index: 5;
+    opacity: 1;
+    transform: translateY(0);
+}    
 
 
 .latest-matches{

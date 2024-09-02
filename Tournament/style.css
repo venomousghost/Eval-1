@@ -144,12 +144,12 @@ body {
 .carousel-bg3 {
     display: flex;
     justify-content: center;
-    background-image: url(https://wallpapergod.com/images/hd/4k-gaming-7680X4800-wallpaper-y31a8hm3p7kpqjzt.jpeg);
+    background-image: url(bg2.jpeg);
 }
 
 .carousel-bg2 {
     /* background-image: url(https://wallpapers.com/images/hd/rocket-league-desktop-pwgu1cynwgge6wqu.jpg); */
-    background-image: url(Sponser-img/img3.jpg);
+    background-image: url(bg3.jpg);
     display: flex;
     justify-content: center;
     background-position: 30% 90%;
@@ -159,7 +159,7 @@ body {
 .carousel-bg1 {
     display: flex;
     justify-content: center;
-    background-image: url(https://i.pinimg.com/originals/c3/91/a8/c391a8fd1db0e538735fda694bac31b5.jpg);
+    background-image: url(bg1.jpg);
 }
 .carousel-div h1{
     font-size: 50px;

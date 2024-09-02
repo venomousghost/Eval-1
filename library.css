@@ -10,9 +10,19 @@ body {
     justify-content: space-around;
     padding: 10px 4px;
 }
-.nav1{
-margin-right: 24px;
+.chao{
+    position: absolute;
+    right:1300px
 }
+.nav-1{
+    position: absolute;
+left: 310px;
+}
+.nav-2{
+    position: absolute;
+    left: 1040px;
+}
+
 .nav-2 ul{
     display: flex;
     gap:20px;
@@ -42,6 +52,7 @@ margin-right: 24px;
 .main{
     display: flex;
     padding: 5px;
+    margin-top: 60px;
 }
 .sub-main{
   margin-top: 40px;

@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
- background-color: black;
- color: white;
+    background-color: #000;
+    color: white;
   
   
 }
@@ -12,7 +12,10 @@ body {
 }
 .chao{
     position: absolute;
-    right:1300px
+    right:1300px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: linear-gradient(to right,blue,red);
 }
 .nav-1{
     position: absolute;
@@ -31,8 +34,13 @@ left: 310px;
 .nav-2 li{
     list-style: none;
     font-size: 23px;
-    
+
 }
+.nav-2 li a{
+    text-decoration: none;
+    color: white;
+}
+
 .search-input {
     width: 200px;
     height:20px;
@@ -61,13 +69,14 @@ left: 310px;
 .sub-head1{
     padding: 20px;
     background-color: black;
-    width: 200px;
+    width: 170px;
     height:35px;
     border-radius: 20px;
    align-items: center;
    text-align:center;
    font-size: 25px;
    color: grey;
+   display: flex;
   
 }
 .sub-head1 a{
@@ -76,6 +85,10 @@ left: 310px;
 }
 .sub-head1:hover{
     background-color:  rgba(186, 123, 123, 0.288);
+    color: white;
+}
+.sub-head1 a:hover{
+   
     color: white;
 }
 

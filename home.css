@@ -147,25 +147,7 @@ body {
          * TYPOGRAPHY
          */
       
-        /* font family */
-        --fontFamily-oxanium: 'Oxanium', cursive;
-        --fontFamily-work-sans: 'Work Sans', sans-serif;
-      
-        /* font size */
-        --fontSize-1: 3.6rem;
-        --fontSize-2: 2.4rem;
-        --fontSize-3: 2rem;
-        --fontSize-4: 1.7rem;
-        --fontSize-5: 1.6rem;
-        --fontSize-6: 1.5rem;
-        --fontSize-7: 1.4rem;
-        --fontSize-8: 1.2rem;
-      
-        /* font weight */
-        --weight-regular: 400;
-        --weight-semiBold: 600;
-        --weight-bold: 700;
-      
+ 
         /**
          * SPACING
          */
@@ -235,6 +217,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
+    background-color: #00000063;
+    backdrop-filter: blur(5px);
     padding: 19px 100px;
     display: flex;
     justify-content: space-between;
@@ -365,6 +349,10 @@ nav .dropdown-menu li a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  
+}
+#slide1-content{
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ;
 }
 
 .item .content {
@@ -403,35 +391,6 @@ nav .dropdown-menu li a:hover {
 }
 #slide5:checked ~ .slides {
     transform: translateX(-80%);
-}
-
-/* Navigation arrows */
-.arrows {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-}
-
-.arrow {
-    background-color: #eee5;
-    border: none;
-    font-family: monospace;
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    font-size: x-large;
-    color: #eee;
-    transition: .5s;
-    cursor: pointer;
-}
-
-.arrow:hover {
-    background-color: #eee;
-    color: black;
 }
 
 /* Thumbnail navigation */
@@ -706,6 +665,9 @@ html {
   gap: 30px;
   font-size: var(--fontSize-8);
 }
+.section-news{
+    background-color: #000;
+}
 
 .news-card {
   background-color: var(--bg-oxford-blue-alpha-90);
@@ -838,3 +800,256 @@ html {
   .container { max-width: 1140px; }
 
   .section-text { margin-block-end: 60px;}
+  footer{
+    width: 100%;
+    height: 50vh;
+    background: #282828;
+    display: flex;
+    align-items: center;
+    
+}
+.footer-body{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.box{
+    width: 300px;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 18px;
+    text-align: justify;
+    padding: 20px;
+    line-height: 1.5;
+}
+.footer-logo{
+    height: 12vh;
+    background-color: #00FFFF;
+    color: #000;
+    line-height: 1.7rem;
+    width: 200px;
+    border-radius: 30px;
+    text-align: center;
+    margin:0 0 20px 20px;
+}
+.footer-logo:hover{
+    transform: scale(1.1);
+}
+ul h3{
+    color: #00ffff;
+    font-weight: 450;
+}
+ul li{
+    list-style: none;
+    line-height: 2.5rem;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ul li a .fab{
+    font-size: 1.2rem;
+    color: #00FFFF;
+    margin-right: 15px;
+}
+ul li a:hover{
+    color: #00FFFF;
+}
+.footer-bottom{
+    width: 100%;
+    height: 7vh;
+    background: #1B1919;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+}
+.footer-bottom span{
+    color: #00FFFF;
+    font-weight: bold;
+}
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+
+.section-p1 {
+  padding: 40px 0;
+}
+.section-m1 {
+  margin: 40px 0;
+}
+.product-section{
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://static.vecteezy.com/system/resources/thumbnails/002/016/010/original/futuristic-threshold-with-reflections-on-wall-and-floor-free-video.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 600px;
+    background-position: 50% 50%;
+    background-attachment: fixed ;
+}
+.product-section img{
+    opacity: 0.8;
+}
+button.normal {
+  font-size: 14px;
+  font-weight: 600px;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+button.normal:hover {
+  background-color: #088178;
+  color: #fff;
+}
+body {
+  width: 100%;
+}
+
+#hero {
+  background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/h_2203,c_limit/1d094caa-5100-457d-b3e1-b66160c13e1f/nike-basketball.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 80px;
+}
+
+#hero h4 {
+  padding-bottom: 15px;
+  font-size: 40px;
+}
+#hero h2{
+  font-size: 70px;
+
+}
+#hero h1 {
+  color: #088178;
+  font-size: 70px;
+
+}
+#hero button {
+  background-color: transparent;
+  background-image: url(images/button.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: #088178;
+  padding: 14px 65px 14px 65px;
+}
+#features {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#features .f-box {
+  width: 180px;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #cce7d0;
+  border-radius: 4px;
+  margin: 15px 0;
+  transition: box-shadow 0.3s;
+}
+#features .f-box:hover {
+  box-shadow: 10px 10px 54px whitesmoke;
+}
+#features .f-box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#features .f-box h6 {
+  display: inline-block;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  font-size: 14px;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+}
+#features .f-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+#features .f-box:nth-child(3) h6 {
+  background-color: #d1e8f2;
+}
+#features .f-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+#features .f-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+#features .f-box:nth-child(6) h6 {
+  background-color: #fff2e5;
+}
+.product-section .pro-collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 60px;
+}
+.product-section h1,
+.product-section p {
+  text-align: center;
+}
+.product-section .product-cart {
+  width: 280px;
+  border: 1px solid #ebebeb;
+  padding: 13px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  transition: box-shadow 0.2s;
+}
+.product-section .product-cart:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+.product-section .product-cart img {
+  width: 100%;
+  border-radius: 25px;
+}
+.product-section .product-cart span {
+  color: #969696;
+  font-weight: 500;
+  line-height: 30px;
+}
+.product-section .product-cart h4 {
+  font-size: 18px;
+  color: rgb(41, 41, 41);
+}
+.product-section .product-cart .stars {
+  color: #e6ae2c;
+  padding: 0px 0;
+}
+.product-section .product-cart .price {
+  color: #088178;
+  padding: 4px 0;
+}
+.product-section .product-cart .buy-icon {
+  color: #088178;
+  background-color: #c7e9e75e;
+  padding: 15px;
+  border-radius: 50px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}

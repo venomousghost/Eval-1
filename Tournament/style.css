@@ -3,11 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
 
 body {
     background-color: whitesmoke !important;
     height: 1000vh;
-    color: #f9f5f5;
+    /* color: #f9f5f5; */
+
 }
 
 .header {
@@ -132,24 +141,49 @@ body {
     height: 100vh;
     background-size: cover;
 }
-
 .carousel-bg3 {
-    background-image: url(https://wallpapergod.com/images/hd/4k-gaming-7680X4800-wallpaper-y31a8hm3p7kpqjzt.jpeg);
+    display: flex;
+    justify-content: center;
+    background-image: url(bg2.jpeg);
 }
 
 .carousel-bg2 {
     /* background-image: url(https://wallpapers.com/images/hd/rocket-league-desktop-pwgu1cynwgge6wqu.jpg); */
-    background-image: url(Sponser-img/img3.jpg);
-
+    background-image: url(bg3.jpg);
+    display: flex;
+    justify-content: center;
     background-position: 30% 90%;
     
 }
 
 .carousel-bg1 {
-    background-image: url(https://i.pinimg.com/originals/c3/91/a8/c391a8fd1db0e538735fda694bac31b5.jpg);
+    display: flex;
+    justify-content: center;
+    background-image: url(bg1.jpg);
 }
-
-
+.carousel-div h1{
+    font-size: 50px;
+    font-weight: 800;
+    color: #f9f5f5;
+    /* color:rgb(216, 44, 75) */
+}
+.carousel-div p{
+    color: whitesmoke;
+    text-shadow: black 2px 2px;
+    /* color:rgb(216, 44, 75) */
+}
+.carousel-div button{
+    padding: 5px 10px;
+    font-weight: 700;
+    color: #f9f5f5;
+    background-color:rgb(216, 44, 75);
+}
+.carousel-div button:hover{
+    padding: 5px 10px;
+    font-weight: 700;
+    color: black;
+    background-color:white;
+}
 .main-cover{
     margin-top: 130px;
     display: flex;
@@ -230,6 +264,7 @@ body {
     width: 32%;
     height: 386px;
     border: 1px solid whitesmoke;
+    z-index: 0;
 }
 
 .caard .immg {
@@ -371,23 +406,25 @@ body {
     color: whitesmoke;
     width: 50%;
     height: 40px;
+    margin-left: 120px;
+    opacity: 0;
     align-items: center;
     border: none;
-    top: 150px;
-    left: 120px;
-    position: relative;
-    display: none;
+    z-index: 1;
+    transition: opacity 0.9s, z-index 0.9s;
 } 
 .caard:hover{
-    opacity: 0.5;
+    z-index: 0;
     cursor: pointer;
-    filter: grayscale(80%);
-}
-.caard button:hover{
-
-    display: inline;
+    filter: grayscale(70%);
 }
 
+.caard:hover button{
+    filter: none;
+    z-index: 5;
+    opacity: 1;
+    transform: translateY(0);
+}    
 
 
 .latest-matches{
@@ -564,6 +601,146 @@ body {
     color: #ffffff;
     background-color: #071c3c;
 }
+.parralax .text .btn:hover{
+    padding: 12px 20px;
+    width: 150px;
+    background-color: #ffffff;
+    color: #071c3c;
+}
+.parralax .text .btn a{
+   text-decoration: none;
+   color: white;
+}
+.parralax .text .btn:hover a{
+    text-decoration: none;
+    color: #071c3c;
+ }
+ 
+
+
+.track-outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    height: 450px;
+}
+
+.track-lower{
+    width: 1350px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: black;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+}
+.track-upper{
+    width: 1350px;
+    height: 146px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: black;
+    justify-content: center;
+    font-weight: 800;
+}
+.track-card{
+    width: 176px;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .track-card:hover{
+    background-color: rgb(216, 44, 75);
+}
+.track-card:hover .svg{
+    fill: #ffffff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(262deg) brightness(107%) contrast(105%);
+} */
+.track-outer .track-card img{
+    width: 60px;
+    height: 50px;
+}
+ .track-card .img{
+    display: flex;
+    justify-content: center;
+}
+.track-card .text{
+    height: 60px;
+
+}
+.track-card .text .text1{
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+.track-card .text .text2{
+    font-size: 14px;
+    text-align: center;
+    color:gray;
+}
+.sher{
+    position: absolute;
+    left: 100px;
+  
+}
+
+
+
+
+
+.reviews{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.review-card{
+    display: flex;
+    width: 100%;
+    animation: 25s slide infinite linear;
+}
+.slidee{
+    margin-top: 80px;
+    white-space: nowrap;
+    display: flex;
+}
+.reviews .h1{
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-weight: 800;
+}
+.review-card1 {
+    margin-left: 50px;
+    padding: 20px 20px ;
+    width: 500px;
+    height: 200px;
+    background-color: #141f2b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-card1 .img img{
+    width: 400px;
+    height: 120px;
+}
+.review-card1 .icon{
+    align-self: start;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.review-card1 .icon img{
+    width: 20px;
+    height: 20px;
+}
+
+
+
 .colaborator {
 
     background-image: url(back1.jpg);
@@ -578,7 +755,6 @@ body {
     gap: 60px;
     height: 70vh;
 }
-
 .colaborator h1 {
     margin-top: 40px;
     font-size: 30px;

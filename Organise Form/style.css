@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(image\ \(1\).webp);
+    background-size: cover;
+    display: flex;
+    justify-content: center
+
+}
+.main-wrap{
+    width: 85%;
+    height: 100vh;
+    display: flex;
+}
+.main-text{
+    height: 100vh;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-form{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 35%;
+}
+.main-text .h1{
+ font-size: 45px;
+ color: white;
+    font-weight: 700;
+    font-family: sans-serif;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+.main-text .p{
+    width: 88%;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 100;
+    color: white;
+    margin-bottom: 45px;
+}
+/* .trusted{
+    margin-bottom: 100px;
+    width: 100%;
+    height: 50px;
+} */
+.trust{
+    color: white;
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.main-text .btn{
+margin-top: 60px;
+
+}
+.main-text button{
+    border: 2px solid rgb(179, 174, 174);
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 4px;
+
+}
+.main-text button:hover{
+    background-color: rgba(0,0, 0,0.5);
+}
+.main1{
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.main-wrap1{
+    width: 85%;
+    height: 305vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.main-wrap1 .card{
+    width: 100%;
+    border-radius: 15px;
+    height: 400px;
+    
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main-wrap1 .card1{
+    background: linear-gradient(90.52deg, rgb(24, 24, 27) 52.16%, rgba(24, 24, 27, 0) 95.48%), url(images/service-bg-image-0.jpg) no-repeat right;
+}
+.main-wrap1 .card3{
+    background: linear-gradient(90.52deg, rgb(24, 24, 27) 52.16%, rgba(24, 24, 27, 0) 95.48%), url(images/service-bg-image-5.jpg) no-repeat right;
+}
+.main-wrap1 .card4{
+    background: linear-gradient(90.52deg, rgb(24, 24, 27) 52.16%, rgba(24, 24, 27, 0) 95.48%), url(images/service-bg-image-3.jpg) no-repeat right;
+}
+.main-wrap1 .card5{
+    background: linear-gradient(90.52deg, rgb(24, 24, 27) 52.16%, rgba(24, 24, 27, 0) 95.48%), url(images/service-bg-image-6.jpg) no-repeat right;
+}
+.card-text{
+    margin-left: 30px;
+}
+.card .h11{
+    width: 700px;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    font-family: sans-serif;
+    color: white;
+    margin-bottom: 20px;
+
+}
+.card .h33{
+    width: 800px;
+    font-size: 22px;
+    font-weight: 200;
+    font-family: sans-serif;
+    color: white;
+
+}
+.form{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.form .h1{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    font-family: sans-serif;
+}
+.form .h3{
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.form-container {
+    background-color: rgba(0,0, 0,0.7);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 430px;
+    height: 590px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 20px;
+    color:white;
+}
+
+label {
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+input[type="text"] {
+height: 40px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color:rgb(216, 44, 75);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color:rgb(216, 44, 75); ;
+}

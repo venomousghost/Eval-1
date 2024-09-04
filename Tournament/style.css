@@ -1,19 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Maven+Pro:wght@900&family=Roboto:wght@500&family=Ubuntu:wght@700&display=swap');
 
-:root{
-    
-    --backcolor:#12181c;
-    --fontcolor:#eeeae1;
-    --btncolor:#00FFFF;
-    --fadecolor:#238888;
-    --ccolor:linear-gradient(221deg, #212121 28%, #00c1c1 100%);
-    --h2font:'Dosis';
-    --pfont:'Roboto', sans-serif;
-    --logofont:'Maven Pro', sans-serif;
-    --navfont:'Ubuntu';
-    --titletext:'Dosis';
-}
 * {
     margin: 0;
     padding: 0;
@@ -30,10 +17,6 @@
 
 body {
     background-color: whitesmoke !important;
-<<<<<<< HEAD
-    height: 1000vh;
-=======
->>>>>>> d4ba9de89ee6b6edf31e47a8ca1c5027b9a78885
     /* color: #f9f5f5; */
 
 }
@@ -148,20 +131,12 @@ nav .dropdown-menu li a:hover {
 .carousel-bg3 {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    background-image: url(bg2.jpeg);
-=======
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg2.jpeg);
->>>>>>> d4ba9de89ee6b6edf31e47a8ca1c5027b9a78885
 }
 
 .carousel-bg2 {
     /* background-image: url(https://wallpapers.com/images/hd/rocket-league-desktop-pwgu1cynwgge6wqu.jpg); */
-<<<<<<< HEAD
-    background-image: url(bg3.jpg);
-=======
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg3.jpg);
->>>>>>> d4ba9de89ee6b6edf31e47a8ca1c5027b9a78885
     display: flex;
     justify-content: center;
     background-position: 30% 90%;
@@ -171,11 +146,7 @@ nav .dropdown-menu li a:hover {
 .carousel-bg1 {
     display: flex;
     justify-content: center;
-<<<<<<< HEAD
-    background-image: url(bg1.jpg);
-=======
     background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg1.jpg);
->>>>>>> d4ba9de89ee6b6edf31e47a8ca1c5027b9a78885
 }
 .carousel-div h1{
     font-size: 50px;
@@ -184,24 +155,12 @@ nav .dropdown-menu li a:hover {
     /* color:rgb(216, 44, 75) */
 }
 .carousel-div p{
-<<<<<<< HEAD
-=======
     font-size: 20px;
->>>>>>> d4ba9de89ee6b6edf31e47a8ca1c5027b9a78885
     color: whitesmoke;
     text-shadow: black 2px 2px;
     /* color:rgb(216, 44, 75) */
 }
 .carousel-div button{
-<<<<<<< HEAD
-    padding: 5px 10px;
-    font-weight: 700;
-    color: #f9f5f5;
-    background-color:rgb(216, 44, 75);
-}
-.carousel-div button:hover{
-    padding: 5px 10px;
-=======
     padding: 10px 20px;
     font-weight: 700;
     color: #f9f5f5;
@@ -209,7 +168,6 @@ nav .dropdown-menu li a:hover {
     background-color:rgb(216, 44, 75);
 }
 .carousel-div button:hover{
->>>>>>> d4ba9de89ee6b6edf31e47a8ca1c5027b9a78885
     font-weight: 700;
     color: black;
     background-color:white;
@@ -632,24 +590,16 @@ nav .dropdown-menu li a:hover {
     background-color: #071c3c;
 }
 .parralax .text .btn:hover{
-<<<<<<< HEAD
-    padding: 12px 20px;
-=======
->>>>>>> d4ba9de89ee6b6edf31e47a8ca1c5027b9a78885
     width: 150px;
     background-color: #ffffff;
     color: #071c3c;
 }
 .parralax .text .btn a{
    text-decoration: none;
-<<<<<<< HEAD
-   color: white;
-=======
    color: crimson;
    font-size: 16px;
    text-shadow: white .2px .2px .5px ;
    font-weight: 700;
->>>>>>> d4ba9de89ee6b6edf31e47a8ca1c5027b9a78885
 }
 .parralax .text .btn:hover a{
     text-decoration: none;

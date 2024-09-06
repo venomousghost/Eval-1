@@ -276,3 +276,94 @@ ul li a:hover{
     color: #00FFFF;
     font-weight: bold;
 }
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 968px) {
+    body{
+        background: #425cba;
+    }
+    .imgbox img{
+        width: 400px;
+        height: 400px;
+    }
+    nav .navigation li{
+        margin-left: 10px;
+    }
+
+    nav .navigation li a{
+        font-size: 0.9em;
+    }
+
+    .container{
+        width: 90%;
+        top: 10%;
+        left: 5%;
+        padding: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading h1{
+        font-size: 20px;
+    }
+
+    .icons i{
+        font-size: 1.25rem;
+    }
+
+    footer {
+        margin-top: 300px;
+        flex-direction: column;
+        align-items: center;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    nav .navigation{
+        display: none;
+    }
+    .imgbox img{
+        width: 250px;
+        height: 250px;
+    }
+    nav .menuToggle{
+        display: block;
+    }
+
+    .container{
+        width: 100%;
+        top: 5%;
+        left: 2%;
+        padding: 10px;
+        flex-direction: column;
+        align-items: right;
+    }
+    .text input{
+    width: 100px;
+}
+    .heading h1{
+        font-size: 15px;
+    }
+
+    .text input{
+        height: 20px;
+    }
+
+    button{
+        height: 35px;
+        width: 100px;
+    }
+    .text2 h3{
+        padding-left: 20px;
+        font-size: 20px;
+    }
+   .text2 p{
+        padding-left: 20px;
+        font-size: 15px;
+    }
+    .icons i{
+        font-size: 1rem;
+    }
+}

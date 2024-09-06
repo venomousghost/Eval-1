@@ -192,10 +192,11 @@ nav .dropdown-menu li a:hover {
 }
 .main .image{
     width: 50%;
+
 }
 .main .image img{
     width: 100%;
-    height: 340px;
+    height: 360px;
 }
 .main .text{
     display: flex;
@@ -203,18 +204,43 @@ nav .dropdown-menu li a:hover {
 }
 .main .text .button{
     margin-top: 20px;
-    font-weight: 800;
+    width: 30%;
+    background-color: #f9f5f5;
+    color: #000;
+    border-bottom: 1px solid black;
+    font-weight: 700;
+    transition: all .3s linear;
+}
+.main .text .button:hover{
+    border-bottom: 1px solid black;
+    background-color: #f9f5f5;
+    color: rgb(216, 44, 75);
+}
+.main .btn{
+    border: none;
+    box-shadow: none;
+}
+.main-col-btn{
+    width: 80%;
+}
+.main .btn:active{
+    box-shadow: none;
+    border: none;
+}
+
+
+.collapse .card{
+    width: 100%;
 }
 .main .h1 {
     width: 70%;
-    color: black;
+    color: rgb(216, 44, 75);
     font-size: 45px;
     font-weight: 700;
-    margin-top: 20px;
     font-family: sans-serif;
 }
 .main .p{
-    color: gray;
+    color: black;
     width: 75%;
     margin-top: 15px;
 }
@@ -249,12 +275,19 @@ nav .dropdown-menu li a:hover {
 .caard {
     background-color: #030c1a;
     color: #f9f5f5;
+    width: 100%;
+    height: 386px;
+    border: 1px solid whitesmoke;
+    z-index: 0;
+}
+.caard-wrap {
+    background-color: #030c1a;
+    color: #f9f5f5;
     width: 32%;
     height: 386px;
     border: 1px solid whitesmoke;
     z-index: 0;
 }
-
 .caard .immg {
     display: flex;
     flex-direction: column;
@@ -389,29 +422,37 @@ nav .dropdown-menu li a:hover {
     border: 1px solid white;
 }*/
 
- .caard button {
+ .caard-wrap button {
     background: linear-gradient(90deg, #071c3c 0%, #160f58 73%, #13069f 100%);
     color: whitesmoke;
-    width: 50%;
+    width: 0%;
     height: 40px;
-    margin-left: 120px;
+    margin-left:110px;
     opacity: 0;
     align-items: center;
     border: none;
     z-index: 1;
-    transition: opacity 0.9s, z-index 0.9s;
+    position: absolute;
+    top: 1550px;
+    transition: all .6s ease-in-out;
+    display: none;
 } 
-.caard:hover{
+.caard-wrap:hover .caard{
+    
     z-index: 0;
+    overflow: hidden;
     cursor: pointer;
-    filter: grayscale(70%);
+    /* filter: grayscale(70%);
+    filter: drop-shadow(70%); */
+    /* filter: saturate(20%); */
+    filter: blur(5px);
 }
 
-.caard:hover button{
-    filter: none;
-    z-index: 5;
+.caard-wrap:hover button{
     opacity: 1;
-    transform: translateY(0);
+    width: 17%;
+    opacity: 1;
+    display: inline;
 }    
 
 

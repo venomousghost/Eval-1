@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Maven+Pro:wght@900&family=Roboto:wght@500&family=Ubuntu:wght@700&display=swap');
+
+:root{
+    
+    --backcolor:#12181c;
+    --fontcolor:#eeeae1;
+    --btncolor:#00FFFF;
+    --fadecolor:#238888;
+    --ccolor:linear-gradient(221deg, #212121 28%, #00c1c1 100%);
+    --h2font:'Dosis';
+    --pfont:'Roboto', sans-serif;
+    --logofont:'Maven Pro', sans-serif;
+    --navfont:'Ubuntu';
+    --titletext:'Dosis';
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 nav {
     position: fixed;
     top: 0;
@@ -104,6 +121,7 @@ nav .dropdown-menu li a:hover {
     background-color: var(--btncolor);
     color: #fff;
 }
+
 .main{
     width: 100%;
     height: 100vh;
@@ -177,6 +195,7 @@ margin-top: 60px;
 }
 .main1{
     width: 100%;
+    height: 200vh;
     height: 245vh;
     display: flex;
     justify-content: center;
@@ -184,6 +203,8 @@ margin-top: 60px;
 }
 .main-wrap1{
     width: 85%;
+
+    height: 305vh;
     height: 245vh;
     display: flex;
     flex-direction: column;
@@ -317,7 +338,6 @@ button:hover {
     background-color: white;
     color:rgb(216, 44, 75); ;
 }
-
 
 
 footer{

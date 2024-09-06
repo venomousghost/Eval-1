@@ -2,486 +2,236 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GHome</title>
+    <title>Game</title>
+
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script
-      src="https://kit.fontawesome.com/0e53af926d.js"
-      crossorigin="anonymous"
-    ></script>
-   
 </head>
 <body>
-    <div class="loading">
-        <div class="loading-text">
-            <span class="loading-text-words">L</span>
-            <span class="loading-text-words">O</span>
-            <span class="loading-text-words">A</span>
-            <span class="loading-text-words">D</span>
-            <span class="loading-text-words">I</span>
-            <span class="loading-text-words">N</span>
-            <span class="loading-text-words">G</span>
+  <nav>
+    <a href="#" class="logo">
+        <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>Gaming<span>UI</span>
+    </a>
+    <div class="menuToggle">
+    </div>
+    <ul class="navigation">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="cart/cart.html">Cart</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="login.html">Sign up/sign in</a></li>
+        <li class="dropdown">
+            <a href="#more">More</a>
+            <ul class="dropdown-menu">
+                <li><a href="about us/about us page.html">About us</a></li>
+                <li><a href="contact page/contact2.html">Contact us</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="Tournament/index.html">Tournaments</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</nav>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>
+                A Game Is The Complete Exploration Of Freedom Within A Restrictive Environment
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur tenetur repellat. Soluta rerum nesciunt autem. At asperiores.</p>
+            
+        </div>
+    </section>
+
+    <!-- about  -->
+    <section class="about" id="about">
+        <div class="row" data-aos="zoom-out-down">
+            <div class="col50">
+                <!-- <h2 class="title-text"><box-icon name='user-rectangle' type='solid' color='#00ffff' ></box-icon>About <span>Us</span></h2> -->
+                <h2 class="title-text"><lord-icon
+                    src="https://cdn.lordicon.com/nocovwne.json"
+                    trigger="loop"
+                    colors="primary:#00ffff,secondary:#ffffff"
+                    stroke="66"
+                    style="width: 50px;height: 50px;margin-top: -10px;">
+                </lord-icon>About <span>Us</span></h2>
+                <p>Welcome to GamingUI
+                    At GamingUI, we are passionate gamers just like you! Our mission is to create a gaming community where everyone can come together to enjoy the latest and greatest in gaming. Whether you are a casual player or a hardcore enthusiast, we provide a platform that caters to all your gaming needs.
+                    <br>
+                    Who We Are
+                    Founded by a group of avid gamers, GamingUI is more than just a digital distribution platform. We are a hub for game lovers who seek a seamless, enjoyable experience. We believe in the power of gaming to bring people together, break barriers, and create unforgettable experiences.
+                    <br>
+                    Our Mission
+                    Our mission is simple: to put gamers first. We respect the rights of gamers to truly own their games, and we’re committed to offering the best in gaming entertainment. We believe in transparency, fairness, and providing high-quality content that keeps you coming back for more.</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="media/ab.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------ -->
+
+
+    <!-- ganes -->
+    <section id="games" class="game">
+        <div class="title">
+            <lord-icon
+                src="https://cdn.lordicon.com/ibgjiwvi.json"
+                trigger="loop"
+                colors="primary:#00ffff,secondary:#ffffff"
+                style="width: 50px;height: 50px;">
+            </lord-icon>
+            <h2 class="title-text"><span>G</span>ames</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam fugiat nemo qui.</p>
+        </div>
+        <div class="content">
+            <div class="box" data-aos="flip-left">
+                <div class="imgBx">
+                    <img src="media/games/bgmi.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Battlegrounds Mobile India</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-right">
+                <div class="imgBx">
+                    <img src="media/games/cod.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Call Of Duty:Mobile</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <div class="imgBx">
+                    <img src="media/games/minecraft.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Minecraft</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-right">
+                <div class="imgBx">
+                    <img src="media/games/lords.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Lords Mobile</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-left">
+                <div class="imgBx">
+                    <img src="media/games/pokemon.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Pokemob Unite</h3>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-right">
+                <div class="imgBx">
+                    <img src="media/games/freefire.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Garena Free Fire</h3>
+                </div>
+            </div>
         </div>
     </div>
+    </section>
+    <!-- ----- -->
+
+    <!-- merchandise  -->
+    <section class="merchandise" id="merchandise">
+        <div class="title">
+            <lord-icon
+                src="https://cdn.lordicon.com/ippkhukl.json"
+                trigger="loop"
+                colors="primary:#00ffff,secondary:#ffffff"
+                style="width: 50px;height: 50px;">
+            </lord-icon>
+            <h2 class="title-text">Gaming <span>Merchandise</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam fugiat nemo qui.</p>
+        </div>
+        <div class="content">
+            <div class="box box-1" data-aos="zoom-out-down">
+                <div class="imgBx">
+                    <img src="media/merchandise/streak-hoodie.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Hoodies</h3>
+                    <p>Stay cozy and stylish with our premium hoodies, perfect for gaming or casual wear.</p>
+                </div>
+                <a href="#" class="know">Know More</a>
+            </div>
+            <div class="box box-2" data-aos="zoom-out-down">
+                <div class="imgBx">
+                    <img src="media/merchandise/mask.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Mask</h3>
+                    <p>Protect yourself in style with our breathable, custom-designed masks.</p>
+                </div>
+                <a href="#" class="know">Know More</a>
+            </div>
+            <div class="box box-3" data-aos="zoom-out-down">
+                <div class="imgBx">
+                    <img src="media/merchandise/mobile-collabs.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>T-shirts</h3>
+                    <p>Show off your love for gaming with our soft, high-quality graphic T-shirts.</p>
+                </div>
+                <a href="#" class="know">Know More</a>
+            </div>
+    </section>
+    <!-- ----- -->
+
+
+    <!-- contact  -->
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="text">
+                <h3>Send Us A Message</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis a impedit nulla neque alias temporibus.</p>
+            </div>
+            <div class="contactForm">
+                <form action="mesage.php">
+                    <div class="row100">
+                        <div class="inputBox50">
+                            <input type="text" name="fullname" id="" placeholder="Full Name">
+                        </div>
+                        <div class="inputBox50">
+                            <input type="email" name="fullname" id="" placeholder="Email Adress">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox100">
+                            <textarea name="messages" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox100">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="social">
+                <li><a href="https://www.linkedin.com/in/smruti-ranjan-nayak/"><img src="media/icon/linkedin.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/sm8uti/"><img src="media/icon/instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="media/icon/facebook.png" alt=""></a></li>
+            </div>
+        </div>
+        <p class="copyright">Desgin & Developed By<a href="https://github.com/sm8UTI/"> SM8UTI</a></p>
+    </section>
     
-    <div class="main-content">
-      <nav>
-        <a href="#" class="logo">
-            <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>Gaming<span>UI</span>
-        </a>
-        <div class="menuToggle" onclick="toggleMenu()">
-        </div>
-        <ul class="navigation">
-            <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
-            <li><a href="cart/cart.html" onclick="toggleMenu()">Cart</a></li>
-            <li><a href="store.html" onclick="toggleMenu()">Store</a></li>
-            <li><a href="login.html" onclick="toggleMenu()">Sign up/sign in</a></li>
-            <li class="dropdown">
-                <a href="#more" onclick="toggleMenu()">More</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#option1" onclick="toggleMenu()">About us</a></li>
-                    <li><a href="#option2" onclick="toggleMenu()">Contact us</a></li>
-                    <li><a href="#option3" onclick="toggleMenu()">Library</a></li>
-                </ul>
-            </li>
-
-        </ul>
-    </nav>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 0,
+        });
+    </script>
    
-
-    <!-- slider -->
-    <div class="slider">
-        <input type="radio" name="slider" id="slide1" checked>
-        <input type="radio" name="slider" id="slide2">
-        <input type="radio" name="slider" id="slide3">
-        <input type="radio" name="slider" id="slide4">
-        <input type="radio" name="slider" id="slide5">
-
-        <div class="slides">
-            <div class="item" id="slide1-content">
-                <img src="https://wallpapercave.com/wp/wp5029421.jpg">
-                <div class="content">
-                    <p>Design</p>
-                    <h2>Cyberpunk </h2>
-                    <p>
-                        Cyberpunk 2077 is an open-world, a megalopolis obsessed with power, glamour, and body modification. Take on the most powerful forces of the city in a fight for glory and survival.
-                    </p>
-                </div>
-            </div>
-            <div class="item" id="slide2-content">
-                <img src="https://wallpapercave.com/wp/wp3770576.jpg">
-                <div class="content">
-                    <p>Design</p>
-                    <h2>Red Dead Redemption 2</h2>
-                    <p>
-                        Red Dead Redemption 2 is an epic tale of honor and loyalty at the dawn of the modern age. Includes Red Dead Redemption 2: Story Mode and Red Dead Online.
-                    </p>
-                </div>
-            </div>
-            <div class="item" id="slide3-content">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Falan-wake-2-hd-gaming_bWZlam2UmZqaraWkpJRobWllrWdma2U.jpg&f=1&nofb=1&ipt=3336c6f77fb0cb857dd0b6e3ecd786697cd53f0d8e475cac272b7c14f2b0b4d0&ipo=images">
-                <div class="content">
-                    <p>Design</p>
-                    <h2>Alan Wake 2</h2>
-                    <p>
-                        Saga Anderson arrives to investigate ritualistic murders in a small town. Alan Wake pens a dark story to shape the reality around him. These two heroes are somehow connected.
-                    </p>
-                </div>
-            </div>
-            <div class="item" id="slide4-content">
-                <img src="https://rare-gallery.com/mocahbig/392395-elden-ring-game-tarnished-warrior-4k-pc-wallpaper.jpg">
-                <div class="content">
-                    <p>Design</p>
-                    <h2>Elden Ring</h2>
-                    <p>
-                        ELDEN RING is a fantasy RPG game by FromSoftware and George R. R. Martin, set in the Lands Between. Pre-order now and get exclusive bonuses, editions, and expansions.
-                    </p>
-                </div>
-            </div>
-            <div class="item" id="slide5-content">
-                <img src="https://images.hdqwalls.com/download/the-last-of-us-video-game-4k-n3-3840x2160.jpg">
-                <div class="content">
-                    <p>Design</p>
-                    <h2>The last of us : Part 1</h2>
-                    <p>
-                        Experience the emotional storytelling and unforgettable characters in The Last of Us™, winner of over 200 Game of the Year awards.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Thumbnail navigation -->
-        <div class="thumbnail">
-            <label class="item" for="slide1">
-                <img src="https://hdqwalls.com/wallpapers/2018-cyberpunk-2077-4k-n6.jpg">
-                <div class="content">Cyberpunk 2077</div>
-            </label>
-            <label class="item" for="slide2">
-                <img src="https://wallpaperaccess.com/full/2377328.jpg">
-                <div class="content">Red Dead Redemption 2</div>
-            </label>
-            <label class="item" for="slide3">
-                <img src="https://wallpapercave.com/wp/wp13002792.jpg">
-                <div class="content">Alan Wake 2</div>
-            </label>
-            <label class="item" for="slide4">
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F4kwallpapers.com%2Fimages%2Fwallpapers%2Felden-ring-pc-games-playstation-4-playstation-5-xbox-one-2880x1800-7712.jpg&f=1&nofb=1&ipt=fcaf4f0503b2968a13087e5877b941c2fa3e45c5878ad416b9f6c5aeb9a25f02&ipo=images">
-                <div class="content">Elden Ring</div>
-            </label>
-            <label class="item" for="slide5">
-                <img src="https://images.hdqwalls.com/wallpapers/the-last-of-us-part-2-4k-2020-6b.jpg">
-                <div class="content">The last of us : Part 1</div>
-            </label>
-        </div>
-    </div>
-    <section class="section brand" aria-label="brand">
-        <div class="container">
-
-          <ul class="has-scrollbar">
-
-            <li class="brand-item">
-              <img src="./images/brand-1.png" width="90" height="90" loading="lazy" alt="brand logo">
-            </li>
-
-            <li class="brand-item">
-              <img src="./images/brand-2.png" width="90" height="90" loading="lazy" alt="brand logo">
-            </li>
-
-            <li class="brand-item">
-              <img src="./images/brand-3.png" width="90" height="90" loading="lazy" alt="brand logo">
-            </li>
-
-            <li class="brand-item">
-              <img src="./images/brand-4.png" width="90" height="90" loading="lazy" alt="brand logo">
-            </li>
-
-            <li class="brand-item">
-              <img src="./images/brand-5.png" width="90" height="90" loading="lazy" alt="brand logo">
-            </li>
-
-            <li class="brand-item">
-              <img src="./images/brand-6.png" width="90" height="90" loading="lazy" alt="brand logo">
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-      
-    <section class="product-section" class="section-p1">
-      <!--<h1>Featured Games</h1>-->
-      
-      <div class="pro-collection">
-        <div class="product-cart">
-          <img src="https://store-images.s-microsoft.com/image/apps.29799.14582624973508592.2000000000007863648.c6853463-3ddd-4434-ba48-0661d492be61" alt="product image" />
-          <span>Forza Horizon 4</span>
-          
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h4 class="price">$78</h4>
-          <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-        </div>
-        <div class="product-cart">
-          <img src="https://store-images.s-microsoft.com/image/apps.9688.70804610839547354.8da93c46-fd13-4b16-8ebe-e8e02c53d93e.09c2e91e-28bd-4f6f-bfd6-79d6b241667a" alt="product image" />
-          <span>Mortal Kombat</span>
-          
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h4 class="price">$78</h4>
-          <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-        </div>
-        <div class="product-cart">
-          <img src="https://store-images.s-microsoft.com/image/apps.20532.67345955710459827.6770a7a0-cc7f-4a09-ae17-dc0da389809a.f565a0bf-8bf9-4648-a658-b93b7a09fa69" alt="product image" />
-          <span>Tomb Raider</span>
-          
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h4 class="price">$78</h4>
-          <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-        </div>
-        <div class="product-cart">
-          <img src="https://store-images.s-microsoft.com/image/apps.9561.69766501749678274.825421a3-6e90-4af8-a717-6375f4b1f802.ce79e4cd-489f-48ea-b7da-b546860070ed" alt="product image" />
-          <span>Tekken 7</span>
-          
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h4 class="price">$78</h4>
-          <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-        </div>
-       
-    </section>
-    <section class="product-section" class="section-p1">
-      
-      <div class="pro-collection">
-        <div class="product-cart">
-          <img src="https://cdn1.epicgames.com/spt-assets/ca9ef1bcf2f54043baac351366aec677/black-myth-wukong-jjjfw.png?h=480&quality=medium&resize=1&w=360" alt="product image" />
-          <span>Black myth Wukong</span>
-         
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h4 class="price">$78</h4>
-          <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-        </div>
-        <div class="product-cart">
-          <img src="https://cdn1.epicgames.com/offer/2c42520d342a46d7a6e0cfa77b4715de/EGS_DyingLightStandardEdition_Techland_Editions_S2_1200x1600-49546d7deaaf160596e034613a2d2a93?h=480&quality=medium&resize=1&w=360" alt="product image" />
-          <span>Dying light</span>
-          
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h4 class="price">$78</h4>
-          <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-        </div>
-        <div class="product-cart">
-          <img src="https://cdn1.epicgames.com/offer/9c1a74145a9145ec803d7452e80819a0/EGS_Fallout4_BethesdaGameStudios_S2_1200x1600-2b307b78180f2a6a2dc89ab1c20b3c1b?h=480&quality=medium&resize=1&w=360" alt="product image" />
-          <span>Fallout-4</span>
-         
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h4 class="price">$78</h4>
-          <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-        </div>
-        <div class="product-cart">
-          <img src="https://cdn1.epicgames.com/offer/6e6aa039c73347b885803de65ac5d3db/EGS_GhostofTsushima_SuckerPunchProductions_S2_1200x1600-e23e02c1d70be7b528dba50860f87d39?h=480&quality=medium&resize=1&w=360" alt="product image" />
-          <span>Ghost of Tsushima</span>
-          
-          <div class="stars">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <h4 class="price">$78</h4>
-          <a href="#"><i class="fa-solid fa-cart-shopping buy-icon"></i></a>
-        </div>
-    </section>
-      <div id="font">
-      <section class="section news" aria-label="our latest news" id="news">
-        <div class="container">
-
-          <p class="section-subtitle" data-reveal="bottom">What's On Our Mind</p>
-
-          <h2 class="h2 section-title" data-reveal="bottom">
-            News And <span class="span">Headlines</span>
-          </h2>
-
-          <p class="section-text" data-reveal="bottom">
-            Our success in creating business solutions is due in large part to our talented and highly committed team.
-          </p>
-
-          <ul class="news-list">
-
-            <li data-reveal="bottom">
-              <div class="news-card">
-
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./images/news-1.jpg" width="600" height="400" loading="lazy"
-                    alt="Innovative Business All Over The World." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-tag">Business</a>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">Elliot Alderson</p>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Innovative Business All Over The World.</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
-                  </p>
-
-                  <a href="#" class="link has-before">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li data-reveal="bottom">
-              <div class="news-card">
-
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./images/news-2.jpg" width="600" height="400" loading="lazy"
-                    alt="How To Start Initiating An Startup In Few Days." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-tag">Startup</a>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">Elliot Alderson</p>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">How To Start Initiating An Startup In Few Days.</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
-                  </p>
-
-                  <a href="#" class="link has-before">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-            
-           
-              <div class="news-card">
-
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="./images/news-3.jpg" width="600" height="400" loading="lazy"
-                    alt="Financial Experts Support Help You To Find Out." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-tag">Finance</a>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-01-01">Jan 01 2022</time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">Elliot Alderson</p>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Financial Experts Support Help You To Find Out.</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
-                  </p>
-
-                  <a href="#" class="link has-before">Read More</a>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-    </div>
-    </div>
-    <footer>
-        <div class="footer-body">
-            <div class="box">
-            <div class="logo footer-logo">
-                <img src="https://www.pngall.com/wp-content/uploads/5/Game-Controller-PNG-Clipart.png" width="50px">
-                <h1>Gaming UI</h1>
-            </div>
-            
-            </div>
-            <ul>
-                <h3>Short Links</h3>
-                <li><a href="#">Arcade</a></li>
-                <li><a href="#">War Zone</a></li>
-                <li><a href="#">Fifa Game</a></li>
-                <li><a href="#">Pes 2020</a></li>
-                <li><a href="#">Xbox Game</a></li>
-            </ul>
-
-            <ul>
-                <h3>Action Games</h3>
-                <li><a href="#">Anpar</a></li>
-                <li><a href="#">BattleField</a></li>
-                <li><a href="#">The Ghost</a></li>
-                <li><a href="#">Fortnite</a></li>
-                <li><a href="#">Cold War</a></li>
-            </ul>
-            <ul>
-                <h3>Get In Touch</h3>
-                <li><a href="#"><i class="fab fa-facebook"></i>Facebook</a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i>Linkedin</a></li>
-            </ul>
-        </div>
-    </footer>
-    <div class="footer-bottom">
-        <p>Copyright &copy; All Right Reserved | Designed <span>By Team UI</span> 2024</p>
-    </div>
 </body>
 </html>

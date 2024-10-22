@@ -203,18 +203,41 @@ nav .dropdown-menu li a:hover {
     flex-direction: column;
 }
 .main .text .button{
-    margin-top: 20px;
-    width: 30%;
+    margin-top: 30px;
+    width: 22%;
     background-color: #f9f5f5;
     color: #000;
+    border: 1px solid transparent; 
     border-bottom: 1px solid black;
+    border-left: 1px solid black;
     font-weight: 700;
-    transition: all .3s linear;
+    padding: 5px 8px;
+    box-sizing: border-box;
+    transition: all .3s ease;
+    transition: border 1s ease;
 }
+#hidden-content{
+    margin-top: 20px;
+    width: 500px;
+}
+
+
 .main .text .button:hover{
-    border-bottom: 1px solid black;
     background-color: #f9f5f5;
     color: rgb(216, 44, 75);
+}
+.main .text  .btn-style{
+    transition: border 1s ease;
+    border: none;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+
+
+.main .text .button:focus {
+    outline: none;
 }
 .main .btn{
     border: none;
@@ -227,11 +250,16 @@ nav .dropdown-menu li a:hover {
     box-shadow: none;
     border: none;
 }
-
-
-.collapse .card{
-    width: 100%;
+#hidden-content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
+#hidden-content.hidden-class-content{
+    opacity: 1;
+    visibility: visible;
+}
+
 .main .h1 {
     width: 70%;
     color: rgb(216, 44, 75);
@@ -458,7 +486,7 @@ nav .dropdown-menu li a:hover {
 
 .latest-matches{
     width: 100%;
-    height: 180vh;
+    height: 200vh;
     background-image: url(page-background-img.jpg);
     background-size: cover;
     background-attachment: fixed;

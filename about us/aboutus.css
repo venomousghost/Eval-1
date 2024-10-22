@@ -20,8 +20,7 @@
     font-family: sans-serif;
 }
 body{
-    background: url(about_bg_1366.jpg)  center/cover;
-    
+    background: url(about_bg_1366.jpg);
     overflow: auto;
 }
 
@@ -36,7 +35,6 @@ nav {
     align-items: center;
     z-index:10000;
     transition: 0.75s;
-    
 }
 
 nav.sticky{
@@ -126,21 +124,17 @@ nav .dropdown-menu li a:hover {
     color: #fff;
 }
 .next{
-    
     background:url(about-top.jpg) no-repeat center/cover;
-    
     width: 100%;
     height: 100vh;
-   
 }
 section img{
     width: 100%;
-    
 }
 .imge{
     transform: translateX(-100px);
         animation: left 2s ease forwards;
-        margin:120px 0 0 20px;
+        margin:90px 0 0 20px;
 }
 .imge img:hover{
     filter: drop-shadow(15px 5px 5px rgb(13, 0, 154));
@@ -154,7 +148,7 @@ section img{
 .imgage{
     transform: translateX(100px);
         animation: right 2s ease forwards;
-        margin: 120px 20px 0 0;
+        margin: 90px 20px 0 0;
 }
 .imgage img:hover{
     filter: drop-shadow(15px 5px 5px rgb(145, 1, 145));
@@ -173,9 +167,7 @@ section .container .heading{
     justify-content: center;
     line-height: 1.5;
     font-family: sans-serif;
-    
     text-shadow: 2px 2px 8px  rgb(185, 1, 154);
-
             transform: translateY(100px);
             animation: slideDown 2s ease forwards;
 }
@@ -219,7 +211,6 @@ section .container .heading{
     text-shadow: 1px 1px 5px  black;
     border-bottom:5px solid #fff ;
     overflow: hidden;
-    
     animation: reveal 2s linear forwards;
     margin-left: 37%;
 }
@@ -260,7 +251,7 @@ margin-top: 20px;
 .a1-row{
     display: flex;
     width: 100%;   
-    margin-top: 15%;
+    margin-top: 12%;
 }
 
 .img-row img{
@@ -278,7 +269,6 @@ margin-top: 20px;
     border: none;
     position: absolute;
     left: 47%;
-    
 }
 .logo1 i{
     position: absolute;
@@ -292,11 +282,9 @@ margin-top: 20px;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: absolute;
     left: 28%;
-    
-   
 }
 .next1{
-    padding-top: 45%;
+    padding-top: 40%;
     width: 100%;
     height: 100vh;
 }
@@ -372,6 +360,25 @@ margin-top: 20px;
     padding-left:280px ;
     padding-bottom: 50px;
 }
+#back-to-top {
+    display: none; 
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--btncolor);
+    color: var(--fontcolor);
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+#back-to-top:hover {
+    background-color: var(--fadecolor);
+}
 .carousel{
     height: 40vh;
     margin-top: 25%;
@@ -403,11 +410,9 @@ margin-top: 20px;
         width: 250px;
         translate: 100px;
     }
-    
 }
 .img-row img:hover{
     opacity: .5;
-    
 }
 
 footer{
@@ -416,7 +421,6 @@ footer{
     background: #282828;
     display: flex;
     align-items: center;
-    
 }
 .footer-body{
     width: 90%;
@@ -434,7 +438,7 @@ footer{
     line-height: 1.5;
 }
 .footer-logo{
-    height: 12vh;
+    height: 15vh;
     background-color: #00FFFF;
     color: #000;
     line-height: 1.7rem;

@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>review</title>
+    <title>cart</title>
     <link rel="stylesheet" href="cart.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
 </head>
 <body>
-  <nav>
+    <nav>
         <a href="#" class="logo">
-            <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>Gaming<span>UI</span>
+            <box-icon name='game' type='solid' color='#00FFFF' ></box-icon>Gaming<span>Sphere</span>
         </a>
         <div class="menuToggle" onclick="toggleMenu()">
         </div>
         <ul class="navigation">
             <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
-            <li><a href="cart/cart.html" onclick="toggleMenu()">Cart</a></li>
+            <li><a href="cart.html" onclick="toggleMenu()">Cart</a></li>
             <li><a href="store.html" onclick="toggleMenu()">Store</a></li>
             <li><a href="login.html" onclick="toggleMenu()">Sign up/Sign in</a></li>
             <li class="dropdown">
                 <a href="#more" onclick="toggleMenu()">More</a>
                 <ul class="dropdown-menu">
                     <li><a href="about us/about us page.html" onclick="toggleMenu()">About us</a></li>
-                    <li><a href="contact page/contact2.html" onclick="toggleMenu()">Contact us</a></li>
+                    <li><a href="contact us/contact2.html" onclick="toggleMenu()">Contact us</a></li>
                     <li><a href="library.html" onclick="toggleMenu()">Library</a></li>
                     <li><a href="Tournament/index.html" onclick="toggleMenu()">Tournament</a></li>
                 </ul>
@@ -39,111 +40,114 @@
             </div>
             <div class="redline"></div>
         </div>
-        <div class="box2">
-       
-            <div class="img-box"><img src="valo.jpg" height="170px" width="150px"></div>
-                <div class="content">
-                    <div class="row1">
-                        <div class="product">
-                            <h4> PRODUCT</h4>
-                        </div>
-                        <div class="price"><h4>PRICE</h4></div>
-                        <div class="quantity"><h4>QUANTITY</h4></div>
-                        <div class="total"><h4>TOTAL</h4></div>
-                    </div>
-                    <div class="row2">
-                        <div class="product1">
-                            <h4> VALORANT</h4>
-                        </div>
-                        <div class="price1"><h4>$32.00</h4></div>
-                        <div class="quantity1"><h4>1</h4></div>
-                        <div class="total1"><h4>$32.00</h4></div>
-                     </div>
+        <!--start-->
+        <div class="main-box">
+            <div class="item-box">
+                <div class="img-box">
+                    <img src="valo.jpg" width="120px" height="150px">
+                </div>
+                <div class="product">
+                    <h3>PRODUCT</h3>
+                    <h4>VALORANT</h4>
+                </div>
+                <div class="quantity">
+                    <H3>QUANTITY</H3>
+                    <button id="valo-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="valo-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button  id="valo-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                </div>
+                <div class="total">
+                    <h3>TOTAL</h3>
+                    <h4>$ <span id="valo-total">1219</span> </h4>
                 </div>
             </div>
-    
-        <div class="li"></div>
-        <div class="box2">
-       
-            <div class="img-box"><img src="chained.jpg" height="170px" width="150px"></div>
-            <div class="content">
-                <div class="row1">
-                    <div class="product">
-                       <h4> PRODUCT</h4>
-                    </div>
-                    <div class="price"><h4>PRICE</h4></div>
-                    <div class="quantity"><h4>QUANTITY</h4></div>
-                    <div class="total"><h4>TOTAL</h4></div>
+            
+            <div class="item-box">
+                <div class="img-box">
+                    <img src="chained.jpg" width="120px" height="150px">
                 </div>
-                <div class="row2">
-                    <div class="product1">
-                       <h4>CHAINED TOGETHER</h4>
-                    </div>
-                    <div class="price1"><h4>$32.00</h4></div>
-                    <div class="quantity1"><h4>1</h4></div>
-                    <div class="total1"><h4>$32.00</h4></div>
+                <div class="product">
+                    <h3>PRODUCT</h3>
+                    <h4>CHAINED TOGETHER</h3>
+                </div>
+                <div class="quantity">
+                    <H3>QUANTITY</H3>
+                    <button id="ct-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="ct-number" type="number" min="0" class="form-control text-center" value="1">
+                           <button  id="ct-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
+
+                </div>
+                <div class="total">
+                    <h3>TOTAL</h3>
+                    <h4>$ <span id="ct-total">59</span> </h4>
                 </div>
             </div>
         </div>
-        <div class="btn">
-            <button type="button" >UPDATE CART</button>
-        </div>
+        
     </div>
+    <!--end-->
     <div class="lower">
         <div class="ship">
             <h1>CALCULATE SHIPPING</h1>
-            <p>Country <span>*</span>:</p>
-            <select name="country" id="ct">
+            <p>Country<span>*</span>:</p>
+            <select name="country" id="ct" >
                 <option value="1" selected >Select a Country...</option>
-                <option value="2">Bhutan</option>
+                <option value="2">India</option>
                 <option value="3" >Sri Lanka</option>
                 <option value="4" >Myanmar</option>
             </select>
             <div class="rowupr">
                 <div class="row">
-                    <p>State <span>*</span>:</p>
-                    <input type="text">
+                    <p>State<span>*</span>:</p>
+                    <input class="text" type="text" required> 
                 </div>
                 <div class="row">
-                    <p>Postcode / ZIP <span>*</span>:</p>
-                    <input type="text">
+                    <p>Postcode / ZIP<span>*</span>:</p>
+                    <input class="text"  type="text" required>
                 </div>
                 
             </div>
-            <div class="btn2"><button type="button" >UPDATE TOTAL</button></div>
         </div>
         <div class="total2">
             <h1>CART TOTALS</h1>
             <div class="three">
                 <div class="line">
                     <div class="boxx">Subtotal</div>
-                    <div class="boxx1">$52.00</div>
+                    <div class="boxx1">           
+                        <h4>$<span id="sub-total">1,278</span></h4>
+                    </div>
                 </div>
                 <div class="line2">
-                    <div class="boxx" style="background: #232930;">Shipping</div>
-                    <div class="boxx1" style="background: #232930;">Free Shipping</div>
+                    <div class="boxx" style="background: #232930;">Shipping Tax</div>
+                    
+                    <div class="boxx1" style="background: #232930;"><h4>$<span id="tax-amount">127.8</span></h4></div>
+                    
                 </div>
                 <div class="line">
                     <div class="boxx">Total</div>
-                    <div class="boxx1">$52.00</div>
+                    <div class="boxx1">
+                        <h4>$<span id="total-price">1,278</span></h4>
+                    </div>
                 </div>
             </div>
             <div class="btn3">
-                <button type="button">PROCEED TO CHECKOUT</button>
+                <button type="button" id="result" >PROCEED TO CHECKOUT</button>
             </div>
         </div>
     </div>
     <div class="space"></div>
     </section>
+
     <footer>
         <div class="footer-body">
             <div class="boxlast ">
              <div class="logo footer-logo">
                 <img src="https://www.pngall.com/wp-content/uploads/5/Game-Controller-PNG-Clipart.png" width="50px">
-                <h1>Gaming UI</h1>
+                <h1>Gaming Sphere</h1>
             </div>
             <div class="about">
-                <p>Gaming UI is a digital distribution platform that puts gamers first and respects their need to own games.</p>
+                <p>Gaming Sphere is a digital distribution platform that puts gamers first and respects their need to own games.</p>
             </div>
             </div>
             <ul>
@@ -173,7 +177,9 @@
         </div>
     </footer>
     <div class="footer-bottom">
-        <p>Copyright &copy; All Right Reserved | Designed <span>By Team UI</span> 2024</p>
+        <p>Copyright &copy; All Right Reserved | Designed <span>By Team Gaming Sphere</span> 2024</p>
     </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

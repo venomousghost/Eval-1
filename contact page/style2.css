@@ -155,7 +155,7 @@ nav .dropdown-menu li a:hover {
     font-family: 'Times New Roman', Times, serif;
 }
 .text input{
-    width: 200px;
+    width: 250px;
     height: 50px;
     padding-left: 10px;
     outline: none;
@@ -163,24 +163,32 @@ nav .dropdown-menu li a:hover {
     font-size: 15px;
     margin-bottom: 10px;
     background: none;
-    border-bottom: 2px solid #03077af4;
+    border: 2px solid #03077af4;
+    border-radius: 25px;
+}
+.container{
+    border-radius: 15px;
+    box-shadow:5px 5px  rgba(232, 163, 255, 0.592);
 }
 .container form input{
     color: #ddd;
 }
 .container form input::placeholder{
     color: #ddd;
+    padding-left: 15px;
 }
+
 .text2{
     color: #03077af4;
+    padding-left: 30px;
 }
 button{
     margin-top: 40px;
-    width: 200px;
+    width: 250px;
     background: #03077af4;
-    border-radius: 50px;
+    border-radius: 25px;
     border: none;
-    height: 40px;
+    height: 50px;
     color: #fff;
     text-align: center;
     font-size: 15px;
@@ -230,7 +238,7 @@ footer{
     line-height: 1.5;
 }
 .footer-logo{
-    height: 12vh;
+    height: 15vh;
     background-color: #00FFFF;
     color: #000;
     line-height: 1.7rem;
@@ -283,8 +291,8 @@ ul li a:hover{
         background: #425cba;
     }
     .imgbox img{
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
     nav .navigation li{
         margin-left: 10px;

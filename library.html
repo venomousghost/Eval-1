@@ -43,21 +43,18 @@
 
 <div class="main">
 
-
-
-
-
     <div class="sub-main1">
         <div class="word1">LIBRARY</div>
         <br>
         <div class="sub-part1">
             <ul>
-                <li>All</li>
-                <li>Favourites</li>
+                <button><li id="all-games" class="active">All</li></button>
+                <button><li id="favorite-games" >Favorites</li></button>
             </ul>
         </div>
+
+
         <div class="sub-part2">
-        
          <label for="dropdown">sort by:</label>
          <select id="dropdown">
              <option value="1" class="one">Alphabetical A-Z</option>
@@ -67,8 +64,10 @@
          </select>
         </div>
 
+
+
         <div class="sub-part3">
-           <div class="card">
+           <div class="card" data-favorite="false">
             <img src="https://cdn1.epicgames.com/spt-assets/5dcd88f4e2094a698ebffa43438edc33/apex-legends-v4qf9.jpg?h=480&quality=medium&resize=1&w=360">
             <div class="text">
                 <li>Apex Legends</li>
@@ -81,10 +80,10 @@
          </div>
          <div class="word">install</div>
             </div>
-            <div class="card">
-                <img src="https://cdn1.epicgames.com/spt-assets/5dcd88f4e2094a698ebffa43438edc33/apex-legends-v4qf9.jpg?h=480&quality=medium&resize=1&w=360">
+            <div class="card"data-favorite="false">
+                <img src="https://cdn1.epicgames.com/6504cc61472e498796e0b4963a201438/offer/EGS_TheOutlastTrials_RedBarrels_S2-1200x1600-c70676de7925195513fa7bc4bc2f1d9b.jpg?resize=1&w=360&h=480&quality=medium">
                 <div class="text">
-                    <li>Apex Legends</li>
+                    <li>Black Myth</li>
                     <select id="dropdown1">
                         <option value="1" class="one"></option>
                         <option value="1" class="one">Go to store page </option>
@@ -94,10 +93,10 @@
              </div>
              <div class="word">install</div>
                 </div>
-                <div class="card">
-                    <img src="https://cdn1.epicgames.com/spt-assets/5dcd88f4e2094a698ebffa43438edc33/apex-legends-v4qf9.jpg?h=480&quality=medium&resize=1&w=360">
+                <div class="card"data-favorite="true">
+                    <img src="https://cdn1.epicgames.com/offer/87b7846d2eba4bc49eead0854323aba8/EGS_DyingLight2StayHumanReloadedEdition_Techland_S2_1200x1600-76cef594ff94fbac64a8af1ebe4c7590?resize=1&w=360&h=480&quality=medium">
                     <div class="text">
-                        <li>Apex Legends</li>
+                        <li>GTA V</li>
                         <select id="dropdown1">
                             <option value="1" class="one"></option>
                             <option value="1" class="one">Go to store page </option>
@@ -107,6 +106,58 @@
                  </div>
                  <div class="word">install</div>
                     </div>
+                    <div class="card"data-favorite="true">
+                        <img src=	"https://cdn1.epicgames.com/offer/c4763f236d08423eb47b4c3008779c84/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa?resize=1&w=360&h=480&quality=medium">
+                        <div class="text">
+                            <li>GOD OF WAR</li>
+                            <select id="dropdown1">
+                                <option value="1" class="one"></option>
+                                <option value="1" class="one">Go to store page </option>
+                                <option value="2"class="one">Add to favourites</option>
+                                <option value="3"class="one">Add to collection</option>          
+                            </select>
+                     </div>
+                     <div class="word">install</div>
+                        </div>
+                        <div class="card"data-favorite="true">
+                            <img src="https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_1200x1600_Portrait%20Store%20Banner-1200x1600-382243057711adf80322ed2aeea42191.jpg?resize=1&w=360&h=480&quality=medium">
+                            <div class="text">
+                                <li>Assasains creed</li>
+                                <select id="dropdown1">
+                                    <option value="1" class="one"></option>
+                                    <option value="1" class="one">Go to store page </option>
+                                    <option value="2"class="one">Add to favourites</option>
+                                    <option value="3"class="one">Add to collection</option>          
+                                </select>
+                         </div>
+                         <div class="word">install</div>
+                            </div>
+                            <div class="card"data-favorite="true">
+                                <img src="https://cdn1.epicgames.com/offer/0c40923dd1174a768f732a3b013dcff2/EGS_TheLastofUsPartI_NaughtyDogLLC_S2_1200x1600-41d1b88814bea2ee8cb7986ec24713e0?resize=1&w=360&h=480&quality=medium">
+                                <div class="text">
+                                    <li>Minecraft</li>
+                                    <select id="dropdown1">
+                                        <option value="1" class="one"></option>
+                                        <option value="1" class="one">Go to store page </option>
+                                        <option value="2"class="one">Add to favourites</option>
+                                        <option value="3"class="one">Add to collection</option>          
+                                    </select>
+                             </div>
+                             <div class="word">install</div>
+                                </div>
+                                <div class="card"data-favorite="false">
+                                    <img src="https://cdn1.epicgames.com/spt-assets/5dcd88f4e2094a698ebffa43438edc33/apex-legends-v4qf9.jpg?h=480&quality=medium&resize=1&w=360">
+                                    <div class="text">
+                                        <li>Apex Legends</li>
+                                        <select id="dropdown1">
+                                            <option value="1" class="one"></option>
+                                            <option value="1" class="one">Go to store page </option>
+                                            <option value="2"class="one">Add to favourites</option>
+                                            <option value="3"class="one">Add to collection</option>          
+                                        </select>
+                                 </div>
+                                 <div class="word">install</div>
+                                    </div>
 
 
         </div>
@@ -122,14 +173,13 @@
         </div>
         <hr width="260px">
     </div>
-
-
-
-
-
-
-
     </div>
+    element selector
+    
+
+
+    
+<script src="scrip.js"></script>
 
 </body>
 

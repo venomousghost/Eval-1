@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Profile Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="text-center profile-card">
+                    <img id="profileImage" src="profile-placeholder.png" class="rounded-circle profile-img" alt="Profile Image">
+                    <h3 class="gamer-name">Name</h3>
+                    <p class="gamer-email">email</p>
+                    <input type="file" id="imageUpload" accept="image/*" style="display:none" onchange="previewProfileImage(event)">
+                    <button class="btn btn-primary" onclick="document.getElementById('imageUpload').click();">Update Profile Image</button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h4 class="profile-header">Profile Settings</h4>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstName">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Enter your first name"required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name"required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" class="form-control" id="age" placeholder="Enter your age"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="achievements">Achievements</label>
+                        <textarea class="form-control" id="achievements" rows="3" placeholder="List your achievements..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="favoriteGame">Favorite Game</label>
+                        <input type="text" class="form-control" id="favoriteGame" placeholder="Enter your favorite game title"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="registeredDate">Registered Date</label>
+                        <input type="datetime" class="form-control" id="registeredDate" placeholder="2022-10-04 14:43:50"required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

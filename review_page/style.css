@@ -1,0 +1,67 @@
+body {
+  background-color: #1d1f27;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  background-color: #2a2e38;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.profile-card {
+  background-color: #3a3f4b;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img {
+  border: 5px solid #ffffff;
+}
+
+.gamer-name {
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.gamer-email {
+  color: #a9a9a9;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+  color: #00d1b2;
+}
+
+.form-control {
+  background-color: #2a2e38;
+  color: #ffffff;
+  border: none;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  background-color: #2a2e38;
+  color: #ffffff;
+  border-color: #00d1b2;
+}
+
+.btn-success {
+  background-color: #00d1b2;
+  border-color: #00d1b2;
+  font-weight: bold;
+}
+
+.btn-success:hover {
+  background-color: #00a08a;
+  border-color: #00a08a;
+}
+#profileImage {
+  width: 150px;  /* Change this value as needed */
+  height: 150px; /* Change this value as needed */
+  object-fit: cover; /* Ensure the image covers the element without distortion */
+}

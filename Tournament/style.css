@@ -123,55 +123,125 @@ nav .dropdown-menu li a:hover {
     color: #fff;
 }
 
-.row {
-    width: 100vw;
+
+
+
+
+
+
+.carousel{
+    width: 100%;
     height: 100vh;
-    background-size: cover;
-}
-.carousel-bg3 {
-    display: flex;
-    justify-content: center;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg2.jpeg);
+    overflow: hidden;
+    position: relative;
 }
 
-.carousel-bg2 {
-    /* background-image: url(https://wallpapers.com/images/hd/rocket-league-desktop-pwgu1cynwgge6wqu.jpg); */
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg3.jpg);
-    display: flex;
-    justify-content: center;
-    background-position: 30% 90%;
-    
+
+.carousel-inner{
+    position: absolute;
+    inset:  0 0 0 0;
+    /* background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(); */
+}
+.carousel-content img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   filter: blur(1px) contrast(90%) sepia(20%) grayscale(20%);
 }
 
-.carousel-bg1 {
-    display: flex;
-    justify-content: center;
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg1.jpg);
+.carousel-inner:nth-child(1){
+    z-index: 1;
 }
-.carousel-div h1{
+
+
+
+@keyframes showContent {
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+.carousel-inner:nth-child(1) h1,.carousel-inner:nth-child(2) h1,.carousel-inner:nth-child(3) h1,
+.carousel-inner:nth-child(1) p,.carousel-inner:nth-child(2) p,.carousel-inner:nth-child(3) p,
+.carousel-inner:nth-child(1) button,.carousel-inner:nth-child(2) button,.carousel-inner:nth-child(3) button{
+    transform: translateY(50px);
+    filter: blur(5px);
+    opacity: 0;
+    animation: showContent .5s .5s linear 1 forwards;
+}
+
+.carousel-inner:nth-child(1) h1,.carousel-inner:nth-child(2) h1,.carousel-inner:nth-child(3) h1{
+    animation-delay: .8s;
+}
+.carousel-inner:nth-child(1) p,.carousel-inner:nth-child(2) p,.carousel-inner:nth-child(3) p{
+    animation-delay: .7s;
+}
+
+
+.carousel-text{
+    position: absolute;
+    top: 30%;
+    max-width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.carousel-text h1{
     font-size: 50px;
     font-weight: 800;
     color: #f9f5f5;
     /* color:rgb(216, 44, 75) */
 }
-.carousel-div p{
+.carousel-text p{
     font-size: 20px;
     color: whitesmoke;
     text-shadow: black 2px 2px;
     /* color:rgb(216, 44, 75) */
 }
-.carousel-div button{
+.carousel-text button{
     padding: 10px 20px;
     font-weight: 700;
     color: #f9f5f5;
     border: none;
     background-color:rgb(216, 44, 75);
 }
-.carousel-div button:hover{
+.carousel-text button:hover{
     font-weight: 700;
     color: black;
     background-color:white;
 }
+.arrows{
+    position: absolute;
+    width: 100px;
+    right: 5%;
+    display: flex;
+    justify-content: space-between;
+    bottom: 10%;
+    z-index: 2;
+}
+.arrows button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(38, 35, 35, 0.267);
+    font-size: larger;
+    transition: .5s;
+}
+.arrows button:hover{
+    background-color: #eee;
+    color: #555;
+}
+
+
+
+
+
+
+
+
 .main-cover{
     margin-top: 130px;
     display: flex;
@@ -315,6 +385,9 @@ nav .dropdown-menu li a:hover {
     height: 386px;
     border: 1px solid whitesmoke;
     z-index: 0;
+    position: relative;
+    transition: all .6s ease-in-out;
+
 }
 .caard .immg {
     display: flex;
@@ -453,15 +526,15 @@ nav .dropdown-menu li a:hover {
  .caard-wrap button {
     background: linear-gradient(90deg, #071c3c 0%, #160f58 73%, #13069f 100%);
     color: whitesmoke;
-    width: 0%;
-    height: 40px;
-    margin-left:110px;
+    height: 50px;
     opacity: 0;
     align-items: center;
     border: none;
     z-index: 1;
     position: absolute;
-    top: 1550px;
+    left: 43%;
+    top: 42%;
+    padding: 8px 12px;
     transition: all .6s ease-in-out;
     display: none;
 } 
@@ -477,8 +550,7 @@ nav .dropdown-menu li a:hover {
 }
 
 .caard-wrap:hover button{
-    opacity: 1;
-    width: 17%;
+    width: 22%;
     opacity: 1;
     display: inline;
 }    
@@ -915,4 +987,106 @@ ul li a:hover{
 .footer-bottom span{
     color: #00FFFF;
     font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 350px;
+    /* overflow-y: auto;  */
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    height: 560px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Style for the close button */
+.close-btn {
+    color: #fff;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 25px;
+    font-size: 20px;
+    font-weight: 600;  float: right;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 10px;
+}
+
+
+
+        .container h2 {
+           
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #555;
+        }
+       
+.submit-msg{
+    background-color: gainsboro;
+    color: green;
+    position: absolute;
+    z-index: -2;
+    opacity: 0;
+    transition: all .7s ease;
 }

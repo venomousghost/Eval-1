@@ -125,13 +125,12 @@ nav .dropdown-menu li a:hover {
     width: 100%;
     height: 535vh;
     display: flex;
-    justify-content: center;
     background-color: rgba(0, 0, 0, 0.9);
 
 }
 
 .main-inner {
-    width: 90%;
+    width: 75%;
     height: 535vh;
     display: flex;
     justify-content: center;
@@ -150,14 +149,10 @@ nav .dropdown-menu li a:hover {
     height: 520vh;
 }
 
-.news-right {
-    width: 23%;
-    height: 510vh;
-    background-color: rgb(156, 161, 54);
-}
+
 
 .featured {
-    width: 100%;
+    width:  1100px;
     background-color: #f80136;
     height: 50px;
     display: flex;
@@ -179,7 +174,7 @@ nav .dropdown-menu li a:hover {
 }
 
 .news1 {
-    width: 961px;
+    width: 1100px;
     height: 524px;
     background-image: url(news1/post-bg.jpg);
     background-size: cover;
@@ -189,7 +184,7 @@ nav .dropdown-menu li a:hover {
 }
 
 .news1-wrap {
-    width: 900px;
+    width: 1100px;
     height: 460px;
     display: flex;
     justify-content: space-between;
@@ -198,7 +193,6 @@ nav .dropdown-menu li a:hover {
 .news1-left {
     width: 60%;
     height: 460px;
-    overflow: hidden;
     background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5)) , url(news1/8-540x400.jpg) ,no-repeat;
     background-size: cover;
     display: flex;
@@ -296,17 +290,20 @@ nav .dropdown-menu li a:hover {
 }
 
 .add {
-    width: 100%;
+    width:  1100px;
     margin: 40px 0px;
-    height: 118px;
+    height: 125px;
     background-image: url(news1/add.jpg);
     background-size: cover;
 }
 
 .news2 {
-
+    width:  1100px;
     display: flex;
     justify-content: space-between;
+}
+.news2 .featured{
+    width: 100%;
 }
 
 .news2-left {
@@ -427,7 +424,7 @@ nav .dropdown-menu li a:hover {
 
 .news3{
     height: 557px;
-    width: 100%;
+    width:  1100px;
     margin-bottom: 30px;
 }
 .grid{
@@ -478,7 +475,7 @@ nav .dropdown-menu li a:hover {
 }
 
 .news4{
-    width: 100%;
+    width:  1100px;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -621,4 +618,36 @@ ul li a:hover{
 .footer-bottom span{
     color: #00FFFF;
     font-weight: bold;
+}
+
+.news-right{
+    width: 300px;
+    position: fixed;
+    height: 580px;
+    position: fixed;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-right-add1{
+    height: 290px;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all  .5s ease-in-out;
+}
+.news-right-add2{
+    height: 290px;
+    /* overflow: hidden; Ensures the image doesn't overflow outside the div */
+    /* position: relative; */
+    transform: translateY(100px);
+    transition: all  .5s ease-in-out;
+    opacity: 0;
+    
+}
+
+.news-right-add2 img{
+    object-fit: cover;
+    width: 300px;
+    height: 290px;
 }

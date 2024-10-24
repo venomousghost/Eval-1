@@ -1,4 +1,4 @@
-/* Base styles */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -169,6 +169,11 @@ nav .dropdown-menu li a:hover {
 .sub-part1 ul li:hover {
     color: white;
 }
+.sub-part1 button{
+    background-color: black;
+    color: #fff;
+    border: none;
+}
 
 .sub-part2 {
     padding: 25px;
@@ -184,6 +189,13 @@ nav .dropdown-menu li a:hover {
 .sub-part3 {
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+#sort-dropdown{
+    background-color: #000;
+    border: none;
+    color: #fff;
 }
 
 #dropdown {
@@ -271,7 +283,7 @@ form input {
     margin-top: 20px;
 }
 
-/* Media Queries for Responsiveness */
+
 
 @media (max-width: 1200px) {
     nav {

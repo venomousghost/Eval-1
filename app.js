@@ -9,7 +9,6 @@ function upadatectNumber(product, price, isIncreasing) {
     }
 
     ctInput.value = ctNumber;
-
     const ctTotal = document.getElementById(product + '-total');
     ctTotal.innerText = ctNumber * price;
     calculateTotal();
@@ -50,11 +49,13 @@ document.getElementById('valo-minus').addEventListener('click', function () {
     upadatectNumber('valo', 1219, false);
 });
 
-const button = document.querySelector('#result');
-
-button.addEventListener('click', function () {
+// const button = document.querySelector('#result');
+let btn = document.getElementById('payBtn');
+let pay = document.querySelector('.item')
+btn.addEventListener('click', function () {
     const valoQuantity = getInputvalue('valo');
     const ctQuantity = getInputvalue('ct');
+
 
     const valoTotal = valoQuantity * 1219;
     const ctTotal = ctQuantity * 59;
@@ -63,15 +64,46 @@ button.addEventListener('click', function () {
 });
 
 function app(valoTotal, ctTotal, valoQuantity, ctQuantity) {
-    alert(`Items purchased:
-    Valorant (${valoQuantity} units) = $${valoTotal},
-    Chained Together (${ctQuantity} units) = $${ctTotal}`);
 
-    setTimeout(() => {
-        if (valoQuantity == 0 && ctQuantity == 0) {
-            alert("Purchase Failed");
-        } else {
-            alert("Thank You for Purchasing.");
-        }
-    }, 100);
+const ans = "Item Purchased:"
+    document.getElementById('item-heading').innerText= ans;
+    const ans1 = `Valorant = $${valoTotal}`
+    document.getElementById('item-para').innerText= ans1;
+    const ans2 = `Chained Together = $${ctTotal}`
+    document.getElementById('item-para2').innerText= ans2;
+    pay.style.zIndex = 2;
+    pay.style.opacity = 1;
+valoQuantity.value=1
+ctQuantity.value=1
+    setTimeout(()=>{
+        pay.remove();
+        const Thank = "Thank you for Purchasing!!! "
+    document.getElementById('item-heading').innerText= ans;
+    document.getElementById('item-para').innerText.remove()
+    document.getElementById('item-para2').innerText.remove()
+    },8000);
+
+    // setTimeout(() => {
+    //     if (valoQuantity == 0 && ctQuantity == 0) {
+    //         alert("Purchase Failed");
+    //     } else {
+    //         alert("Thank You for Purchasing.");
+    //     }
+    // }, 100);
+
+
+    
 }
+
+
+
+
+// let btn = document.getElementById('payBtn');
+
+
+
+// let pay = document.querySelector('.item')
+// btn.onclick = function () {
+//     pay.style.zIndex = 2;
+//     pay.style.opacity = 1;
+// }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './Library.css';
-import Card from './Card';
+import Navbar from './Navbar';
+
+import Card from '../Card/Card';
 
 const games = [
   { title: "Apex Legends", image: "https://cdn1.epicgames.com/spt-assets/5dcd88f4e2094a698ebffa43438edc33/apex-legends-v4qf9.jpg?h=480&quality=medium&resize=1&w=360", favorite: false },
@@ -31,6 +32,8 @@ function Library() {
   });
 
   return (
+    <>
+    <Navbar/>
     <div className="library">
       <div className="content">
         <div className="games-section">
@@ -81,7 +84,7 @@ function Library() {
       </div>
       <br></br> <br></br>
     </div>
-    
+    </>
   );
 }
 

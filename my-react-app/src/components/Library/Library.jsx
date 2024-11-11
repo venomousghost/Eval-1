@@ -34,12 +34,12 @@ function Library() {
   return (
     <>
     <Navbar/>
-    <div className="library">
-      <div className="content">
-        <div className="games-section">
-          <div className="sub-main1">
-            <div className="word1">LIBRARY</div>
-            <div className="sub-part1">
+    <div className="librarya">
+      <div className="contenta">
+        <div className="games-sectiona">
+          <div className="sub-main1a">
+            <div className="word1a">LIBRARY</div>
+            <div className="sub-part1a">
               <button onClick={() => handleFilterChange('all')}>
                 <li id="all-games" className={filter === 'all' ? 'active' : ''}>All</li>
               </button>
@@ -47,16 +47,16 @@ function Library() {
                 <li id="favorite-games" className={filter === 'favorites' ? 'active' : ''}>Favorites</li>
               </button>
             </div>
-            <div className="sub-part2">
-              <label htmlFor="sort-dropdown">Sort by:</label>
-              <select id="sort-dropdown">
+            <div className="sub-part2a">
+              <label htmlFor="sort-dropdowna">Sort by:</label>
+              <select id="sort-dropdowna">
                 <option value="1">Alphabetical A-Z</option>
                 <option value="2">Recently purchased</option>
                 <option value="3">Recently played</option>
                 <option value="4">Alphabetical Z-A</option>
               </select>
             </div>
-            <div className="sub-part3">
+            <div className="sub-part3a">
               {filteredGames.map((game, index) => (
                 <Card key={index} game={game} />
               ))}
@@ -65,15 +65,15 @@ function Library() {
           </div>
         </div>
         <br></br> <br></br>
-        <div className="filters-section">
-          <div className="sub-main2">
-            <div className="word2">Filters</div>
-            <div className="nav-3">
+        <div className="filters-sectiona">
+          <div className="sub-main2a">
+            <div className="word2a">Filters</div>
+            <div className="nav-3a">
               <form>
                 <input
                   type="text"
                   placeholder="Title"
-                  className="search-input1"
+                  className="search-input1a"
                   onChange={handleSearchChange}
                 />
               </form>

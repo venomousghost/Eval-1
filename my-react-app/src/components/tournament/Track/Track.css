@@ -1,0 +1,75 @@
+
+.track-outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    height: 450px;
+}
+
+.track-lower{
+    width: 1350px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: black;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+}
+.track-upper{
+    width: 1350px;
+    height: 146px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: black;
+    justify-content: center;
+    font-weight: 800;
+}
+.track-card{
+    width: 176px;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .track-card:hover{
+    background-color: rgb(216, 44, 75);
+}
+.track-card:hover .svg{
+    fill: #ffffff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(262deg) brightness(107%) contrast(105%);
+} */
+.track-outer .track-card img{
+    width: 60px;
+    height: 50px;
+}
+ .track-card .img{
+    display: flex;
+    justify-content: center;
+}
+.track-card .text{
+    height: 60px;
+
+}
+.track-card .text .text1{
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+.track-card .text .text2{
+    font-size: 14px;
+    text-align: center;
+    color:gray;
+}
+.sher{
+    position: absolute;
+    left: 100px;
+    height: 420px;
+}
+
+
+

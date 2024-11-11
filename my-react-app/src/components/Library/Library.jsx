@@ -1,91 +1,127 @@
 import React, { useState } from 'react';
-import Navbar from './Navbar';
+import './ProfilePage.css';
 
-import Card from '../Card/Card';
-
-const games = [
-  { title: "Apex Legends", image: "https://cdn1.epicgames.com/spt-assets/5dcd88f4e2094a698ebffa43438edc33/apex-legends-v4qf9.jpg?h=480&quality=medium&resize=1&w=360", favorite: false },
-  { title: "The Outlast", image: "https://cdn1.epicgames.com/6504cc61472e498796e0b4963a201438/offer/EGS_TheOutlastTrials_RedBarrels_S2-1200x1600-c70676de7925195513fa7bc4bc2f1d9b.jpg?resize=1&w=360&h=480&quality=medium", favorite: false },
-  { title: "Dying Light", image: "https://cdn1.epicgames.com/offer/87b7846d2eba4bc49eead0854323aba8/EGS_DyingLight2StayHumanReloadedEdition_Techland_S2_1200x1600-76cef594ff94fbac64a8af1ebe4c7590?resize=1&w=360&h=480&quality=medium", favorite: true },
-  { title: "Alan Wake 2", image: "https://cdn1.epicgames.com/offer/c4763f236d08423eb47b4c3008779c84/EGS_AlanWake2_RemedyEntertainment_S2_1200x1600-c7c8091ddac0f9669c8e5905bca88aaa?resize=1&w=360&h=480&quality=medium", favorite: true },
-  { title: "GTA V", image: "https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_1200x1600_Portrait%20Store%20Banner-1200x1600-382243057711adf80322ed2aeea42191.jpg?resize=1&w=360&h=480&quality=medium", favorite: true },
-  { title: "Last of us", image: "https://cdn1.epicgames.com/offer/0c40923dd1174a768f732a3b013dcff2/EGS_TheLastofUsPartI_NaughtyDogLLC_S2_1200x1600-41d1b88814bea2ee8cb7986ec24713e0?resize=1&w=360&h=480&quality=medium", favorite: true }
-];
-
-function Library() {
-  const [filter, setFilter] = useState('all');
-  const [search, setSearch] = useState('');
-
-  const handleFilterChange = (newFilter) => {
-    setFilter(newFilter);
-  };
-
-  const handleSearchChange = (event) => {
-    setSearch(event.target.value.toLowerCase());
-  };
-
-  const filteredGames = games.filter(game => {
-    if (filter === 'favorites' && !game.favorite) {
-      return false;
-    }
-    return game.title.toLowerCase().includes(search);
+function ProfilePage() {
+  const [profile, setProfile] = useState({
+    firstName: '',
+    lastName: '',
+    age: '',
+    email: '',
+    achievements: '',
+    favoriteGame: '',
+    registeredDate: '',
   });
 
+  const [profileImage, setProfileImage] = useState('profile-placeholder.png');
+  const [submittedProfile, setSubmittedProfile] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+  });
+
+  const handleInputChange = (event) => {
+    const { id, value } = event.target;
+    setProfile((prevProfile) => ({
+      ...prevProfile,
+      [id]: value,
+    }));
+  };
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = () => {
+        setProfileImage(reader.result);
+      };
+      reader.readAsDataURL(file);
+    } else {
+      console.error("No file selected or file is invalid.");
+    }
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!profile.firstName || !profile.lastName || !profile.email) {
+      alert("Please fill out all required fields.");
+      return;
+    }
+
+  
+    console.log(`Age: ${profile.age}`);
+    console.log(`Achievements: ${profile.achievements}`);
+    console.log(`Favorite Game: ${profile.favoriteGame}`);
+
+  
+    setSubmittedProfile({
+      firstName: profile.firstName,
+      lastName: profile.lastName,
+      email: profile.email,
+    });
+
+  
+    setProfile({
+      firstName: '',
+      lastName: '',
+      age: '',
+      email: '',
+      achievements: '',
+      favoriteGame: '',
+      registeredDate: '',
+    });
+  };
+
   return (
-    <>
-    <Navbar/>
-    <div className="librarya">
-      <div className="contenta">
-        <div className="games-sectiona">
-          <div className="sub-main1a">
-            <div className="word1a">LIBRARY</div>
-            <div className="sub-part1a">
-              <button onClick={() => handleFilterChange('all')}>
-                <li id="all-games" className={filter === 'all' ? 'active' : ''}>All</li>
-              </button>
-              <button onClick={() => handleFilterChange('favorites')}>
-                <li id="favorite-games" className={filter === 'favorites' ? 'active' : ''}>Favorites</li>
-              </button>
-            </div>
-            <div className="sub-part2a">
-              <label htmlFor="sort-dropdowna">Sort by:</label>
-              <select id="sort-dropdowna">
-                <option value="1">Alphabetical A-Z</option>
-                <option value="2">Recently purchased</option>
-                <option value="3">Recently played</option>
-                <option value="4">Alphabetical Z-A</option>
-              </select>
-            </div>
-            <div className="sub-part3a">
-              {filteredGames.map((game, index) => (
-                <Card key={index} game={game} />
-              ))}
-             
-            </div>
-          </div>
+    <div className="containera">
+      <div className="profile-carda">
+       
+        <div className="image-sectiona">
+          <img id="profileImagea" src={profileImage} className="profile-imga" alt="Profile" />
+          <input type="file" id="imageUploada" accept="image/*" style={{ display: 'none' }} onChange={handleImageChange} />
+          <button className="btna btn-primary" onClick={() => document.getElementById('imageUploada').click()}>Update Profile Image</button>
         </div>
-        <br></br> <br></br>
-        <div className="filters-sectiona">
-          <div className="sub-main2a">
-            <div className="word2a">Filters</div>
-            <div className="nav-3a">
-              <form>
-                <input
-                  type="text"
-                  placeholder="Title"
-                  className="search-input1a"
-                  onChange={handleSearchChange}
-                />
-              </form>
-            </div>
-            <hr width="260px" />
-          </div>
+        <div className="info-sectiona">
+          <h3 className="gamer-namea">{submittedProfile.firstName} {submittedProfile.lastName}</h3>
+          <p className="gamer-emaila">{submittedProfile.email}</p>
         </div>
       </div>
-      <br></br> <br></br>
+      <div className="form-sectiona">
+        <h4 className="profile-headera">Profile Settings</h4>
+        <form onSubmit={handleSubmit}>
+          <div className="form-groupa">
+            <label htmlFor="firstName">First Name</label>
+            <input type="text" id="firstName" value={profile.firstName} onChange={handleInputChange} placeholder="Enter your first name" required />
+          </div>
+          <div className="form-groupa">
+            <label htmlFor="lastName">Last Name</label>
+            <input type="text" id="lastName" value={profile.lastName} onChange={handleInputChange} placeholder="Enter your last name" required />
+          </div>
+          <div className="form-groupa">
+            <label htmlFor="age">Age</label>
+            <input type="number" id="age" value={profile.age} onChange={handleInputChange} placeholder="Enter your age" required />
+          </div>
+          <div className="form-groupa">
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" value={profile.email} onChange={handleInputChange} placeholder="Enter your email" required />
+          </div>
+          <div className="form-groupa">
+            <label htmlFor="achievements">Achievements</label>
+            <textarea id="achievements" value={profile.achievements} onChange={handleInputChange} rows="3" placeholder="List your achievements..."></textarea>
+          </div>
+          <div className="form-groupa">
+            <label htmlFor="favoriteGame">Favorite Game</label>
+            <input type="text" id="favoriteGame" value={profile.favoriteGame} onChange={handleInputChange} placeholder="Enter your favorite game title" required />
+          </div>
+          <div className="form-groupa">
+            <label htmlFor="registeredDate">Registered Date</label>
+            <input type="datetime-local" id="registeredDate" value={profile.registeredDate} onChange={handleInputChange} required />
+          </div>
+          <button type="submit" className="btna btn-success">Save Changes</button>
+        </form>
+      </div>
     </div>
-    </>
+    
   );
 }
 
-export default Library;
+export default ProfilePage;

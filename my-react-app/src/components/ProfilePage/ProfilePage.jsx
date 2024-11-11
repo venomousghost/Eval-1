@@ -72,13 +72,13 @@ function ProfilePage() {
   };
 
   return (
-    <div className="container">
+    <div className="containera">
       <div className="profile-carda">
        
         <div className="image-sectiona">
           <img id="profileImagea" src={profileImage} className="profile-imga" alt="Profile" />
           <input type="file" id="imageUploada" accept="image/*" style={{ display: 'none' }} onChange={handleImageChange} />
-          <button className="btn btn-primary" onClick={() => document.getElementById('imageUploada').click()}>Update Profile Image</button>
+          <button className="btna btn-primary" onClick={() => document.getElementById('imageUploada').click()}>Update Profile Image</button>
         </div>
         <div className="info-sectiona">
           <h3 className="gamer-namea">{submittedProfile.firstName} {submittedProfile.lastName}</h3>
@@ -116,7 +116,7 @@ function ProfilePage() {
             <label htmlFor="registeredDate">Registered Date</label>
             <input type="datetime-local" id="registeredDate" value={profile.registeredDate} onChange={handleInputChange} required />
           </div>
-          <button type="submit" className="btn btn-success">Save Changes</button>
+          <button type="submit" className="btna btn-success">Save Changes</button>
         </form>
       </div>
     </div>

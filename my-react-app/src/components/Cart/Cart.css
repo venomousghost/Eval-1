@@ -19,17 +19,17 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-section{
+.cartz{
     background: url("http://www.pixelstalk.net/wp-content/uploads/2016/05/Desktop-gaming-backgrounds-1080p-dosh-tosh.jpg") no-repeat center/cover fixed;
     min-height: 120vh;
     width: 100%;
     color: #fff;
     
 }
-.container{
+.containerz{
     padding: 100px 400px 0 280px;
 }
-.item{
+.itemz{
     margin: 20% 0 0 20%;
     background-color: white;
     border: 1px solid black;
@@ -44,18 +44,18 @@ section{
     border-radius: 10px;
     transition: 3s all ease-in-out;
 }
-.item h2{
+.itemz h2{
 padding-bottom: 20px;
 }
-.item p{
+.itemz p{
     padding-bottom: 20px;
 }
-.item button:hover{
+.itemz button:hover{
     background-color: #fff;
     color: rgb(232, 22, 22);
     border: 2px solid rgb(232, 22, 22);
 }
-.item button{
+.itemz button{
     background: rgb(232, 22, 22);
     color: #fff;
     font-weight: 600;
@@ -170,22 +170,22 @@ nav .dropdown-menu li a:hover {
     color: #fff;
    
 }
-.box{
+.boxz{
     display: flex;
 }
 
-.cart-head h1{
+.cart-headz h1{
     color: #fff;
     padding: 0px 5px 10px 5px;
     font-size: 40px;
     align-items: center;
 }
-.redline{
+.redlinez{
     margin:0px 0px 15px 0 ;
     border-bottom: 5px solid rgb(212, 12, 12);
     width: 380px;
 }
-.i{
+.iz{
     border:1px solid #353a40;
     border-radius: 5px;
     padding: 13px;
@@ -194,7 +194,7 @@ nav .dropdown-menu li a:hover {
     margin-left: 80px;
 }
 
-.box1 {
+.box1z {
     display: flex;
 }
 .li{
@@ -202,14 +202,14 @@ nav .dropdown-menu li a:hover {
     width: 1030px;
 }
 
-.box1 .img{
+.box1z .img{
     background: #232930;
     padding: 10px 20px ;
     height: 120px;
     align-items: center;
 }
 
-.btn button{
+.btnz button{
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 15px;
@@ -228,7 +228,7 @@ select{
     background: #232930;
     color: #fff;
 }
-.rowupr{
+.rowuprz{
     display: flex;
 } 
 input{
@@ -243,7 +243,7 @@ input{
     width: 900px;
     background-color: #232930;
 }
-.item-box{
+.item-boxz{
     display: flex;
     border-bottom: 1px solid rgb(81, 78, 78);
 }
@@ -270,7 +270,7 @@ input{
 .product h3,.total h3{
     padding-bottom: 50px;
 }
-.btn-default{
+.btn-defaultz{
     padding: 10px;
     border-radius: 20%;
 }
@@ -284,13 +284,13 @@ input{
     color: white;
     text-align: center;
 }
-.lower{
+.lowerz{
     margin:5% 0 0 0;
     display: flex;
     position: relative;
     
 }
-.btn2 button{
+.btn2z button{
     padding: 10px 15px;
     border-radius: 5px;
     font-size: 18px;
@@ -298,29 +298,29 @@ input{
     border: #353a40;
     cursor: pointer;
 }
-.ship h1{
+.shipz h1{
     font-size: 25px;
 }
-.ship p{
+.shipz p{
     font-size: 15px;
     padding: 20px 0 20px 0;
 }
-.ship span{
+.shipz span{
     color: rgb(235, 24, 24);
 }
-.total2{
+.total2z{
     margin-left: 20px;
 }
-.total2 h1{
+.total2z h1{
     font-size: 25px;
     padding-bottom: 20px;
 }
-.line{
+.linez{
     display: flex;
     font-size: 15px;
     width: 600px;
 }
-.boxx{
+.boxxz{
     height: 50px;
     width: 150px;
 background: #353a40;
@@ -328,25 +328,25 @@ text-align: center;
 padding: 15px 15px 0 15px;
 margin-right: 1px;
 }
-.boxx1{
+.boxx1z{
     height: 50px;
     width: 270px;
     background: #353a40;
     text-align: center;
     padding: 15px 20px 0 20px;
 }
-.line2{
+.line2z{
     width: 600px;
     display: flex;
     font-size: 15px;
 }
-.line2 .boxx{
+.line2z .boxxz{
     background: #353a40;
 }
-.btn3{
+.btn3z{
     margin-left: 230px;
 }
-.btn3 button{
+.btn3z button{
     margin: 20px 0 20px 0;
     background: rgb(232, 22, 22);
     color: #fff;
@@ -357,23 +357,23 @@ margin-right: 1px;
     cursor: pointer;
     
 }
-.rowupr input{
+.rowuprz input{
     color: white;
     padding: 0 0 0 15px;
 }
-.btn button:hover{
+.btnz button:hover{
     background:rgb(232, 22, 22) ;
     color: #fff;
 }
-.btn2 button:hover{
+.btn2z button:hover{
     background:rgb(232, 22, 22) ;
     color: #fff;
 }
-.btn3 button:hover{
+.btn3z button:hover{
     background: #fff;
     color:rgb(232, 22, 22) ;
 }
-.boxlast{
+.boxlastz{
     width: 300px;
     flex-wrap: wrap;
     color: #fff;
@@ -408,7 +408,7 @@ footer{
     text-align: center;
     margin:0 0 20px 20px;
 }
-.purchase-summary {
+.purchase-summaryz {
     position: fixed;
     top: 50%;
     left: 50%;

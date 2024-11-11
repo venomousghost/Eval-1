@@ -73,46 +73,46 @@ function ProfilePage() {
 
   return (
     <div className="container">
-      <div className="profile-card">
+      <div className="profile-carda">
        
-        <div className="image-section">
-          <img id="profileImage" src={profileImage} className="profile-img" alt="Profile" />
-          <input type="file" id="imageUpload" accept="image/*" style={{ display: 'none' }} onChange={handleImageChange} />
-          <button className="btn btn-primary" onClick={() => document.getElementById('imageUpload').click()}>Update Profile Image</button>
+        <div className="image-sectiona">
+          <img id="profileImagea" src={profileImage} className="profile-imga" alt="Profile" />
+          <input type="file" id="imageUploada" accept="image/*" style={{ display: 'none' }} onChange={handleImageChange} />
+          <button className="btn btn-primary" onClick={() => document.getElementById('imageUploada').click()}>Update Profile Image</button>
         </div>
-        <div className="info-section">
-          <h3 className="gamer-name">{submittedProfile.firstName} {submittedProfile.lastName}</h3>
-          <p className="gamer-email">{submittedProfile.email}</p>
+        <div className="info-sectiona">
+          <h3 className="gamer-namea">{submittedProfile.firstName} {submittedProfile.lastName}</h3>
+          <p className="gamer-emaila">{submittedProfile.email}</p>
         </div>
       </div>
-      <div className="form-section">
-        <h4 className="profile-header">Profile Settings</h4>
+      <div className="form-sectiona">
+        <h4 className="profile-headera">Profile Settings</h4>
         <form onSubmit={handleSubmit}>
-          <div className="form-group">
+          <div className="form-groupa">
             <label htmlFor="firstName">First Name</label>
             <input type="text" id="firstName" value={profile.firstName} onChange={handleInputChange} placeholder="Enter your first name" required />
           </div>
-          <div className="form-group">
+          <div className="form-groupa">
             <label htmlFor="lastName">Last Name</label>
             <input type="text" id="lastName" value={profile.lastName} onChange={handleInputChange} placeholder="Enter your last name" required />
           </div>
-          <div className="form-group">
+          <div className="form-groupa">
             <label htmlFor="age">Age</label>
             <input type="number" id="age" value={profile.age} onChange={handleInputChange} placeholder="Enter your age" required />
           </div>
-          <div className="form-group">
+          <div className="form-groupa">
             <label htmlFor="email">Email</label>
             <input type="email" id="email" value={profile.email} onChange={handleInputChange} placeholder="Enter your email" required />
           </div>
-          <div className="form-group">
+          <div className="form-groupa">
             <label htmlFor="achievements">Achievements</label>
             <textarea id="achievements" value={profile.achievements} onChange={handleInputChange} rows="3" placeholder="List your achievements..."></textarea>
           </div>
-          <div className="form-group">
+          <div className="form-groupa">
             <label htmlFor="favoriteGame">Favorite Game</label>
             <input type="text" id="favoriteGame" value={profile.favoriteGame} onChange={handleInputChange} placeholder="Enter your favorite game title" required />
           </div>
-          <div className="form-group">
+          <div className="form-groupa">
             <label htmlFor="registeredDate">Registered Date</label>
             <input type="datetime-local" id="registeredDate" value={profile.registeredDate} onChange={handleInputChange} required />
           </div>

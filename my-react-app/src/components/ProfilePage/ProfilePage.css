@@ -10,15 +10,15 @@ body {
   min-height: 100vh;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
+.containera {
+  width: 100%;
+  width: 1200px;
   background-color: #2a2e38;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
   margin: 20px;
@@ -35,6 +35,7 @@ body {
   max-width: 350px;
   width: 100%;
   transition: transform 0.3s, box-shadow 0.3s;
+  height: 350px;
 }
 
 .profile-carda:hover {
@@ -108,7 +109,7 @@ body {
   border: 2px solid #00d1b2;
 }
 
-.btn {
+.btna {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 5px;

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import HeaderSection from './HeaderSection';
 import './Cart.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = () => {
   const [valoQuantity, setValoQuantity] = useState(1);
@@ -55,14 +57,14 @@ const Cart = () => {
 
   return (
     <><HeaderSection/>
-    <section className="cart">
-      <div className="container">
-        <div className="box">
-          <div className="redline"></div>
-          <div className="cart-head">
+    <section className="cartz">
+      <div className="containerz">
+        <div className="boxz">
+          <div className="redlinez"></div>
+          <div className="cart-headz">
             <h1>CART</h1>
           </div>
-          <div className="redline"></div>
+          <div className="redlinez"></div>
         </div>
         <div className="main-box">
           <CartItem
@@ -82,8 +84,8 @@ const Cart = () => {
             total={ctQuantity * CT_PRICE}
           />
         </div>
-        <div className="lower">
-          <div className="ship">
+        <div className="lowerz">
+          <div className="shipz">
             <h1>CALCULATE SHIPPING</h1>
             <p>Country<span>*</span>:</p>
             <select name="country" id="ct">
@@ -92,44 +94,44 @@ const Cart = () => {
               <option value="3">Sri Lanka</option>
               <option value="4">Myanmar</option>
             </select>
-            <div className="rowupr">
-              <div className="row">
+            <div className="rowuprz">
+              <div className="rowz">
                 <p>State<span>*</span>:</p>
                 <input className="text" type="text" required />
               </div>
-              <div className="row">
+              <div className="rowz">
                 <p>Postcode / ZIP<span>*</span>:</p>
                 <input className="text" type="text" required />
               </div>
             </div>
           </div>
-          <div className="total2">
+          <div className="total2z">
             <h1>CART TOTALS</h1>
-            <div className="three">
-              <div className="line">
-                <div className="boxx">Subtotal: </div>
-                <div className="boxx1">
-                  <h4>$<span id="sub-total">{subTotal}</span></h4>
+            <div className="threez">
+              <div className="linez">
+                <div className="boxxz">Subtotal: </div>
+                <div className="boxx1z">
+                  <h4>$<span id="sub-totalz">{subTotal}</span></h4>
                 </div>
               </div>
-              <div className="line2">
-                <div className="boxx">Shipping Tax</div>
-                <div className="boxx1"><h4>$<span id="tax-amount">{tax}</span></h4></div>
+              <div className="line2z">
+                <div className="boxxz">Shipping Tax</div>
+                <div className="boxx1z"><h4>$<span id="tax-amount">{tax}</span></h4></div>
               </div>
-              <div className="line">
-                <div className="boxx">Total</div>
-                <div className="boxx1">
-                  <h4>$<span id="total-price">{total}</span></h4>
+              <div className="linez">
+                <div className="boxxz">Total</div>
+                <div className="boxx1z">
+                  <h4>$<span id="total-pricez">{total}</span></h4>
                 </div>
               </div>
             </div>
-            <div className="btn3">
+            <div className="btn3z">
               <button onClick={handlePurchase} id="payBtn">Proceed to Checkout</button>
             </div>
-            <div className='space'></div>
+            <div className='spacez'></div>
           </div>
           {purchaseSummary && (
-            <div className="purchase-summary">
+            <div className="purchase-summaryz">
               <h2>Thank you for your purchase!</h2>
               <p>Your Total Bill is ${total}</p>
             </div>
@@ -142,7 +144,7 @@ const Cart = () => {
 };
 
 const CartItem = ({ imgSrc, title, quantity, onIncrease, onDecrease, total }) => (
-  <div className="item-box">
+  <div className="item-boxz">
     <div className="img-box">
       <img src={imgSrc} alt={title} width="120px" height="150px" />
     </div>
@@ -152,9 +154,9 @@ const CartItem = ({ imgSrc, title, quantity, onIncrease, onDecrease, total }) =>
     </div>
     <div className="quantity">
       <h3>QUANTITY</h3>
-      <button id="valo-minus" className="btn btn-default" onClick={onDecrease}><i className="fas fa-minus"></i></button>
+      <button id="valo-minus" className="btn btn-defaultz" onClick={onDecrease}><FontAwesomeIcon icon={faMinus}></FontAwesomeIcon></button>
       <input id="valo-number" type="number" value={quantity} readOnly min="0" className="form-control text-center" />
-      <button onClick={onIncrease} id="valo-plus" className="btn btn-default"><i className="fas fa-plus"></i></button>
+      <button onClick={onIncrease} id="valo-plus" className="btn btn-defaultz"><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
     </div>
     <div className="total">
       <h3>TOTAL</h3>

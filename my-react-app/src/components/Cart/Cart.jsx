@@ -154,9 +154,9 @@ const CartItem = ({ imgSrc, title, quantity, onIncrease, onDecrease, total }) =>
     </div>
     <div className="quantity">
       <h3>QUANTITY</h3>
-      <button id="valo-minus" className="btn btn-defaultz" onClick={onDecrease}><FontAwesomeIcon icon={faMinus}></FontAwesomeIcon></button>
+      <button id="valo-minus" className="minusplusz" onClick={onDecrease}><FontAwesomeIcon icon={faMinus}></FontAwesomeIcon></button>
       <input id="valo-number" type="number" value={quantity} readOnly min="0" className="form-control text-center" />
-      <button onClick={onIncrease} id="valo-plus" className="btn btn-defaultz"><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
+      <button onClick={onIncrease} id="valo-plus" className="minusplusz"><FontAwesomeIcon icon={faPlus}></FontAwesomeIcon></button>
     </div>
     <div className="total">
       <h3>TOTAL</h3>

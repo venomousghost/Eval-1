@@ -14,12 +14,7 @@
     flex: 3;
   }
   
-  .filters-sectiona {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
   
   .word1a {
     font-size: 50px;
@@ -77,17 +72,6 @@
     margin-bottom: 20px;
   }
   
-  .search-input1a {
-    width: 240px;
-    height: 40px;
-    color: white;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    margin-top: 15px;
-    background-color: #211e1e;
-  }
   
   .nav-3a {
     margin-top: 20px;
@@ -140,14 +124,14 @@ body {
   color: white;
 }
 
-.word1 {
+.word1a {
   font-size: 50px;
   padding: 25px;
   font-weight: bold;
   color: #fff;
 }
 
-.sub-main1 {
+.sub-main1a {
   width: 60%;
   margin-left: 100px;
 }
@@ -160,39 +144,39 @@ body {
   gap: 50px;
 }
 
-.sub-part1 ul li:hover {
+.sub-part1a ul li:hover {
   color: white;
 }
-.sub-part1 button{
+.sub-part1a button{
   background-color: black;
   color: #fff;
   border: none;
 }
 
-.sub-part2 {
+.sub-part2a {
   padding: 25px;
   font-size: 20px;
   color: gray;
   font-weight: 500;
 }
 
-.sub-part2 p {
+.sub-part2a p {
   font-size: 21px;
 }
 
-.sub-part3 {
+.sub-part3a{
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
   width: 1000px;
 }
-#sort-dropdown{
+#sort-dropdowna{
   background-color: #000;
   border: none;
   color: #fff;
 }
 
-#dropdown {
+#dropdowna {
   height: 33px;
   width: 200px;
   border: none;
@@ -218,7 +202,7 @@ body {
   object-fit: cover;
 }
 
-.text {
+.texta {
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -228,7 +212,7 @@ body {
   color: white !important;
 }
 
-#dropdown1 {
+#dropdown1a {
   height: 30px;
   width: 40px;
   border: none;
@@ -244,22 +228,18 @@ body {
   border: none !important;
 }
 
-.word {
+.worda {
   font-size: 15px;
   padding: 5px;
   font-weight: 600;
   color: #fff !important;
 }
 
-.word2 {
+.word2a {
   font-size: 20px;
   color: #fff !important;
 }
 
-.sub-main2 {
-  margin-top: 180px;
-  margin-left: 200px;
-}
 
 form input {
   width: 240px !important;
@@ -273,15 +253,45 @@ form input {
   background-color: #211e1e;
 }
 
-.nav-3 {
-  margin-top: 20px;
-}
 
-#dropdown3{
+
+#dropdown3a{
   width:20px;
   background-color: black;
   color: white;
   border: none;
   margin-left: 175px;
+}
+.filters-sectiona {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.nav-3a {
+  display: flex;
+  width: 100%; /* Ensures it takes full width of the parent */
+  margin-top: 20px;
+}
+
+.search-input1a {
+  width: 100%; /* Takes full width of the container */
+  height: 40px;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: #211e1e;
+  box-sizing: border-box; /* Ensures padding is included in width calculation */
+}
+
+.sub-main2a {
+  width: 100%; /* Ensures it takes full width of the parent */
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #2a2e38;
+  border-radius: 10px;
 }
 

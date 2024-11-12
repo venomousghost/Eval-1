@@ -3,20 +3,20 @@ import './ProfilePage.css';
 
 function ProfilePage() {
   const [profile, setProfile] = useState({
-    firstName: '',
-    lastName: '',
-    age: '',
-    email: '',
-    achievements: '',
-    favoriteGame: '',
-    registeredDate: '',
+    FirstName: '',
+    LastName: '',
+    Age: '',
+    Email: '',
+    Achievements: '',
+    FavoriteGame: '',
+    RegisteredDate: '',
   });
 
   const [profileImage, setProfileImage] = useState('profile-placeholder.png');
   const [submittedProfile, setSubmittedProfile] = useState({
-    firstName: '',
+    FirstName: '',
     lastName: '',
-    email: '',
+    Email: '',
   });
 
   const handleInputChange = (event) => {
@@ -42,32 +42,32 @@ function ProfilePage() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!profile.firstName || !profile.lastName || !profile.email) {
+    if (!profile.FirstName || !profile.LastName || !profile.Email) {
       alert("Please fill out all required fields.");
       return;
     }
 
   
-    console.log(`Age: ${profile.age}`);
-    console.log(`Achievements: ${profile.achievements}`);
-    console.log(`Favorite Game: ${profile.favoriteGame}`);
+    console.log(`Age: ${profile.Age}`);
+    console.log(`Achievements: ${profile.Achievements}`);
+    console.log(`Favorite Game: ${profile.FavoriteGame}`);
 
   
     setSubmittedProfile({
-      firstName: profile.firstName,
-      lastName: profile.lastName,
-      email: profile.email,
+      FirstName: profile.FirstName,
+      LastName: profile.LastName,
+      Email: profile.Email,
     });
 
   
     setProfile({
-      firstName: '',
-      lastName: '',
-      age: '',
-      email: '',
-      achievements: '',
-      favoriteGame: '',
-      registeredDate: '',
+      FirstName: '',
+      LastName: '',
+      Age: '',
+      Email: '',
+      Achievements: '',
+      FavoriteGame: '',
+      RegisteredDate: '',
     });
   };
 
@@ -78,45 +78,45 @@ function ProfilePage() {
         <div className="image-sectiona">
           <img id="profileImagea" src={profileImage} className="profile-imga" alt="Profile" />
           <input type="file" id="imageUploada" accept="image/*" style={{ display: 'none' }} onChange={handleImageChange} />
-          <button className="btna btn-primary" onClick={() => document.getElementById('imageUploada').click()}>Update Profile Image</button>
+          <button className="btna btn-primarya" onClick={() => document.getElementById('imageUploada').click()}>Update Profile Image</button>
         </div>
         <div className="info-sectiona">
-          <h3 className="gamer-namea">{submittedProfile.firstName} {submittedProfile.lastName}</h3>
-          <p className="gamer-emaila">{submittedProfile.email}</p>
+          <h3 className="gamer-namea">{submittedProfile.FirstName} {submittedProfile.LastName}</h3>
+          <p className="gamer-emaila">{submittedProfile.Email}</p>
         </div>
       </div>
       <div className="form-sectiona">
         <h4 className="profile-headera">Profile Settings</h4>
         <form onSubmit={handleSubmit}>
           <div className="form-groupa">
-            <label htmlFor="firstName">First Name</label>
-            <input type="text" id="firstName" value={profile.firstName} onChange={handleInputChange} placeholder="Enter your first name" required />
+            <label htmlFor="FirstName">First Name</label>
+            <input type="text" id="FirstName" value={profile.FirstName} onChange={handleInputChange} placeholder="Enter your first name" required />
           </div>
           <div className="form-groupa">
             <label htmlFor="lastName">Last Name</label>
-            <input type="text" id="lastName" value={profile.lastName} onChange={handleInputChange} placeholder="Enter your last name" required />
+            <input type="text" id="LastName" value={profile.LastName} onChange={handleInputChange} placeholder="Enter your last name" required />
           </div>
           <div className="form-groupa">
-            <label htmlFor="age">Age</label>
-            <input type="number" id="age" value={profile.age} onChange={handleInputChange} placeholder="Enter your age" required />
+            <label htmlFor="Age">Age</label>
+            <input type="number" id="Age" value={profile.Age} onChange={handleInputChange} placeholder="Enter your age" required />
           </div>
           <div className="form-groupa">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" value={profile.email} onChange={handleInputChange} placeholder="Enter your email" required />
+            <label htmlFor="Email">Email</label>
+            <input type="email" id="Email" value={profile.Email} onChange={handleInputChange} placeholder="Enter your email" required />
           </div>
           <div className="form-groupa">
-            <label htmlFor="achievements">Achievements</label>
-            <textarea id="achievements" value={profile.achievements} onChange={handleInputChange} rows="3" placeholder="List your achievements..."></textarea>
+            <label htmlFor="Achievements">Achievements</label>
+            <textarea id="Achievements" value={profile.Achievements} onChange={handleInputChange} rows="3" placeholder="List your achievements..."></textarea>
           </div>
           <div className="form-groupa">
-            <label htmlFor="favoriteGame">Favorite Game</label>
-            <input type="text" id="favoriteGame" value={profile.favoriteGame} onChange={handleInputChange} placeholder="Enter your favorite game title" required />
+            <label htmlFor="FavoriteGame">Favorite Game</label>
+            <input type="text" id="FavoriteGame" value={profile.FavoriteGame} onChange={handleInputChange} placeholder="Enter your favorite game title" required />
           </div>
           <div className="form-groupa">
-            <label htmlFor="registeredDate">Registered Date</label>
-            <input type="datetime-local" id="registeredDate" value={profile.registeredDate} onChange={handleInputChange} required />
+            <label htmlFor="RegisteredDate">Registered Date</label>
+            <input type="datetime-local" id="RegisteredDate" value={profile.RegisteredDate} onChange={handleInputChange} required />
           </div>
-          <button type="submit" className="btna btn-success">Save Changes</button>
+          <button type="submit" className="btna btn-successa">Save Changes</button>
         </form>
       </div>
     </div>

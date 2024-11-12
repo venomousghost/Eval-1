@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Navbar from './Navbar';
 import Card from '../Card/Card';
+import Popup from './popup';
 
 const games = [
   { title: "Apex Legends", image: "https://cdn1.epicgames.com/spt-assets/5dcd88f4e2094a698ebffa43438edc33/apex-legends-v4qf9.jpg?h=480&quality=medium&resize=1&w=360", favorite: false },
@@ -14,6 +15,16 @@ const games = [
 function Library() {
   const [filter, setFilter] = useState('all');
   const [search, setSearch] = useState('');
+  const [showPopup, setShowPopup] = useState(false);
+
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 5000); 
+
+    return () => clearTimeout(timer); 
+  }, []);
 
   const handleFilterChange = (newFilter) => {
     setFilter(newFilter);
@@ -23,16 +34,25 @@ function Library() {
     setSearch(event.target.value.toLowerCase());
   };
 
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
   const filteredGames = games.filter(game => {
     if (filter === 'favorites' && !game.favorite) {
       return false;
     }
     return game.title.toLowerCase().includes(search);
   });
+  const newGame = {
+    title: "New Game Launching Soon!",
+    image: "https://cdn1.epicgames.com/0584d2013f0149a791e7b9bad0eec102/offer/GTAV_EGS_Artwork_1200x1600_Portrait%20Store%20Banner-1200x1600-382243057711adf80322ed2aeea42191.jpg?resize=1&w=360&h=480&quality=medium" // Replace with actual new game image URL
+  };
 
   return (
     <>
     <Navbar/>
+    <Popup show={showPopup} onClose={handleClosePopup} game={newGame} />
     <div className="librarya">
       <div className="contenta">
         <div className="games-sectiona">

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
-
 import Card from '../Card/Card';
 
 const games = [
@@ -60,11 +59,9 @@ function Library() {
               {filteredGames.map((game, index) => (
                 <Card key={index} game={game} />
               ))}
-             
             </div>
           </div>
         </div>
-        <br></br> <br></br>
         <div className="filters-sectiona">
           <div className="sub-main2a">
             <div className="word2a">Filters</div>
@@ -82,7 +79,6 @@ function Library() {
           </div>
         </div>
       </div>
-      <br></br> <br></br>
     </div>
     </>
   );

@@ -172,6 +172,7 @@ nav .dropdown-menu li a:hover {
 }
 .boxz{
     display: flex;
+	width: 900px;
 }
 
 .cart-headz h1{
@@ -183,7 +184,7 @@ nav .dropdown-menu li a:hover {
 .redlinez{
     margin:0px 0px 15px 0 ;
     border-bottom: 5px solid rgb(212, 12, 12);
-    width: 380px;
+    width: 480px;
 }
 .iz{
     border:1px solid #353a40;

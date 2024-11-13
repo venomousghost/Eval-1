@@ -23,11 +23,11 @@
 .contactx{
     background-image:linear-gradient(rgba(238, 0, 214, 0.7), #425cba), url("images/contact/bg.jpg") ;
    height: 100vh;
-    width: 100%;
+    width: 140%;
     position: relative;
 }
 .containerx{
-    width: 70%;
+    width: 60%;
     background: rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(30px);
     background-size: cover;
@@ -148,7 +148,7 @@ nav .dropdown-menu li a:hover {
 }
 .formx{
     display: flex;
-    padding: 0px;
+    padding: 20px;
     
 }
 .headingx h1{
@@ -157,10 +157,10 @@ nav .dropdown-menu li a:hover {
     margin:20px 0 0 20px;
     font-family: 'Times New Roman', Times, serif;
 }
-.textx input{
+.textx .blue{
     width: 250px;
     height: 50px;
-    padding-left: 10px;
+    
     outline: none;
     border: none;
     font-size: 15px;
@@ -170,18 +170,18 @@ nav .dropdown-menu li a:hover {
     border-radius: 25px;
 }
 
-.containerx form input{
+.containerx form .blue{
     color: #ddd;
     padding-left: 10px;
 }
-.containerx form input::placeholder{
+.containerx form .blue::placeholder{
     color: #ddd;
     padding-left: 15px;
 }
 
 .text2x{
     color: #03077af4;
-    padding-left: 30px;
+   
 }
 #btn{
     margin-top: 40px;

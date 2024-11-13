@@ -18,18 +18,18 @@ const sponsers = [
 
 const Sponser = () => {
   return (
-    <div className="colaborator">
+    <div className="X-colaborator">
       <h1>Trusted by gamers, developers, and organizers</h1>
-      <div className="sponser-row second-row">
+      <div className="X-sponser-row X-second-row">
         {sponsers.slice(0, 6).map((sponser, index) => (
-          <div key={index} className="img">
+          <div key={index} className="X-img">
             <img src={sponser.src} alt={sponser.alt} />
           </div>
         ))}
       </div>
-      <div className="sponser-row first-row">
+      <div className="X-sponser-row X-first-row">
         {sponsers.slice(6, 12).map((sponser, index) => (
-          <div key={index + 6} className="img">
+          <div key={index + 6} className="X-img">
             <img src={sponser.src} alt={sponser.alt} />
           </div>
         ))}

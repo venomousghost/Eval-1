@@ -1,4 +1,4 @@
-.main-cover {
+.X-main-cover {
     margin-top: 130px;
     display: flex;
     justify-content: space-around;
@@ -8,27 +8,27 @@
     margin-left: 160px;
 }
 
-.cover {
+.X-cover {
     width: 50%;
     height: 340px;
     display: flex;
 }
 
-.image {
+.X-image {
     width: 50%;
 }
 
-.image img {
+.X-image img {
     width: 100%;
     height: 360px;
 }
 
-.text {
+.X-text {
     display: flex;
     flex-direction: column;
 }
 
-.text .button {
+.X-text .X-button {
     margin-top: 30px;
     width: 22%;
     background-color: #f9f5f5;
@@ -42,7 +42,7 @@
     transition: all .3s ease;
 }
 
-#hidden-content {
+#X-hidden-content {
     margin-top: 20px;
     width: 500px;
     opacity: 0;
@@ -50,42 +50,42 @@
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-#hidden-content.hidden-class-content {
+#X-hidden-content.X-hidden-class-content {
     opacity: 1;
     visibility: visible;
 }
 
-.text .button:hover {
+.X-text .X-button:hover {
     background-color: #f9f5f5;
     color: rgb(216, 44, 75);
 }
 
-.text .btn-style {
+.X-text .X-btn-style {
     transition: border 1s ease;
     border: none;
     border-top: 1px solid black;
     border-right: 1px solid black;
 }
 
-.text .button:focus {
+.X-text .X-button:focus {
     outline: none;
 }
 
-.text .btn {
+.X-text .X-btn {
     border: none;
     box-shadow: none;
 }
 
-.main-col-btn {
+.X-main-col-btn {
     width: 80%;
 }
 
-.text .btn:active {
+.X-text .X-btn:active {
     box-shadow: none;
     border: none;
 }
 
-.h1 {
+.X-h1 {
     width: 70%;
     color: rgb(216, 44, 75);
     font-size: 45px;
@@ -93,7 +93,7 @@
     font-family: sans-serif;
 }
 
-.p {
+.X-p {
     color: black;
     width: 75%;
     margin-top: 15px;

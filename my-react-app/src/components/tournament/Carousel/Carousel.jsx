@@ -1,4 +1,4 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import './carousel.css';
 
 function Carousel() {
@@ -44,39 +44,31 @@ function Carousel() {
     };
 
     return (
-        <div className="carousel">
+        <div className="X-carousel">
             {slides.map((slide, index) => (
                 <div
                     key={index}
-                    className="carousel-inner"
+                    className="X-carousel-inner"
                     style={{
                         display: index === currentIndex ? 'block' : 'none'
                     }}
                 >
-                    <div className="carousel-content">
+                    <div className="X-carousel-content">
                         <img src={slide.image} alt={slide.title} />
-                        <div className="carousel-text">
+                        <div className="X-carousel-text">
                             <h1>{slide.title}</h1>
                             <p>{slide.text}</p>
-                            <button className="buy-now-btn">Buy Now</button>
+                            <button className="X-buy-now-btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
             ))}
-            <div className="arrows">
-                <button id="prev" onClick={() => handleSlide('prev')}>&lt;</button>
-                <button id="next" onClick={() => handleSlide('next')}>&gt;</button>
+            <div className="X-arrows">
+                <button id="X-prev" onClick={() => handleSlide('prev')}>&lt;</button>
+                <button id="X-next" onClick={() => handleSlide('next')}>&gt;</button>
             </div>
         </div>
     );
 }
 
-
-
-
-
-
-
 export default Carousel;
-
-

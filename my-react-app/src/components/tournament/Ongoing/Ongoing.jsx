@@ -10,7 +10,7 @@ const Ongoing = () => {
     const month = monthNames[today.getMonth()];
     const day = today.getDate();
 
-    const dateElements = document.querySelectorAll('.date');
+    const dateElements = document.querySelectorAll('.X-date');
     dateElements.forEach((ele) => {
       ele.innerHTML = `${day} ${month} ${year}`;
     });
@@ -49,78 +49,73 @@ const Ongoing = () => {
 
   // Set intervals for score updates on each card
   useEffect(() => {
-    // Set intervals to update scores for each card
     const interval1 = updateScore(setCard1TeamOneScore, setCard1TeamTwoScore, 10, 12, 5000);
     const interval2 = updateScore(setCard2TeamOneScore, setCard2TeamTwoScore, 15, 18, 4000);
     const interval3 = updateScore(setCard3TeamOneScore, setCard3TeamTwoScore, 25, 19, 4500);
 
-    // Cleanup intervals when the component unmounts
     return () => {
       clearInterval(interval1);
       clearInterval(interval2);
       clearInterval(interval3);
     };
-  }, []); // Empty dependency array ensures this only runs once
+  }, []);
 
   return (
-    <div className="latest-matches">
-      <div className="latest-top">
-        <div className="latest-top-text">
-          {/* <div className="div"><img src="Tournament/play-removebg-preview.png" alt="" width="20px" /></div> */}
-          <div className="div">ONGOING TOURNAMENTS</div>
+    <div className="X-latest-matches">
+      <div className="X-latest-top">
+        <div className="X-latest-top-text">
+          <div className="X-div">ONGOING TOURNAMENTS</div>
         </div>
       </div>
 
-      {/* Match Cards */}
       {[...Array(3)].map((_, idx) => (
         <div key={idx}>
-          <div className="latest-card">
-            <div className="latest-card-inner">
-              <div className="latest-card-img">
-                <div className="img1">
-                  <div className="img">
+          <div className="X-latest-card">
+            <div className="X-latest-card-inner">
+              <div className="X-latest-card-img">
+                <div className="X-img1">
+                  <div className="X-img">
                     <img src="Tournament/team1-banner.png" alt="" />
                   </div>
-                  <div className="text" id={`team${idx + 1}-name1`}>
+                  <div className="X-text" id={`X-team${idx + 1}-name1`}>
                     TRIARCHY
                   </div>
                 </div>
-                <div className="img2">
+                <div className="X-img2">
                   <img src="Tournament/vs_dark.webp" alt="" height="75px" />
                 </div>
-                <div className="img1">
-                  <div className="img">
+                <div className="X-img1">
+                  <div className="X-img">
                     <img src="Tournament/team1-banner.png" alt="" />
                   </div>
-                  <div className="text" id={`team${idx + 1}-name2`}>
+                  <div className="X-text" id={`X-team${idx + 1}-name2`}>
                     TRIARCHY
                   </div>
                 </div>
               </div>
-              <div className="latest-text">
-                <div className="latest-text-inner">
-                  <div className="text-btn">
-                    <div className="text-btn1">all matches</div>
-                    <div className="text-btn2">upcoming matches</div>
+              <div className="X-latest-text">
+                <div className="X-latest-text-inner">
+                  <div className="X-text-btn">
+                    <div className="X-text-btn1">all matches</div>
+                    <div className="X-text-btn2">upcoming matches</div>
                   </div>
-                  <div className="text">LEGENDARY BATTLES</div>
-                  <div className="date">4th sep 2024</div>
+                  <div className="X-text">LEGENDARY BATTLES</div>
+                  <div className="X-date">4th sep 2024</div>
                 </div>
-                <div className="watch">
-                  <div className="score">
-                    {/* Display the scores dynamically */}
+                <div className="X-watch">
+                  <div className="X-score">
                     <span>{card1TeamOneScore}</span>:<span>{card1TeamTwoScore}</span>
                   </div>
-                  <div className="text">watch stream</div>
-                  <div className="stream">
-                    <div className="div"><img src="Tournament/twitch-white-icon.webp" alt="" width="30px" /></div>
-                    <div className="div"><img src="Tournament/youtube-app-white-icon.webp" alt="" width="34px" /></div>
+                  <div className="X-text">watch stream</div>
+                  <div className="X-stream">
+                    <div className="X-div"><img src="Tournament/twitch-white-icon.webp" alt="" width="30px" /></div>
+                    <div className="X-div"><img src="Tournament/youtube-app-white-icon.webp" alt="" width="34px" /></div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div className="linee"></div>
+          <div className="X-linee"></div>
         </div>
       ))}
     </div>

@@ -51,7 +51,7 @@ const ContactUs = () => {
         <div class="menuToggle" onclick="toggleMenu()">
         </div>
         <ul class="navigation">
-            <li><a href="home.html" onclick="toggleMenu()">Home</a></li>
+            <li><a href="/Home" onclick="toggleMenu()">Home</a></li>
             <li><a href="/Cart" onclick="toggleMenu()">Cart</a></li>
             <li><a href="/Profile" onclick="toggleMenu()">Profile</a></li>
             <li><a href="/Login" onclick="toggleMenu()">Sign up/sign in</a></li>

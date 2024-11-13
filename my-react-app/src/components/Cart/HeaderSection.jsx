@@ -16,14 +16,15 @@ function HeaderSection(){
             <li class="dropdown">
                 <a href="#more" onclick="toggleMenu()">More</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#option1" onclick="toggleMenu()">About us</a></li>
+                    <li><a href="/Organise" onclick="toggleMenu()">Organise</a></li>
                     <li><a href="/Contact" onclick="toggleMenu()">Contact us</a></li>
                      <li><a href="/Library" onclick="toggleMenu()">Library</a></li>
+                     <li><a href="/Tournament" onclick="toggleMenu()">Tournament</a></li>
                 </ul>
             </li>
 
         </ul>
-      </nav>
+    </nav>
         </header>
     )
 }

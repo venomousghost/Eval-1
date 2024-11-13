@@ -172,14 +172,14 @@
     height: 590px;
 }
 
-form {
+.X-main-form form {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: space-between;
 }
 
-h2 {
+.X-main-form h2 {
     margin-top: 10px;
     text-align: center;
     font-style: italic;
@@ -187,16 +187,16 @@ h2 {
     color: white;
 }
 
-label {
+.X-main-form label {
     color: white;
     font-weight: bold;
     font-size: 15px;
     margin-top: 10px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+.X-main-form input[type="text"],
+.X-main-form input[type="email"],
+.X-main-form input[type="tel"] {
     width: 95%;
     padding: 10px;
     margin-top: 5px;
@@ -206,11 +206,11 @@ input[type="tel"] {
     font-size: 16px;
 }
 
-input[type="text"] {
+.X-main-form input[type="text"] {
     height: 40px;
 }
 
-form button {
+.X-main-form form button {
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -223,7 +223,7 @@ form button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.X-main-form button:hover {
     background-color: white;
     color: rgb(216, 44, 75);
 }

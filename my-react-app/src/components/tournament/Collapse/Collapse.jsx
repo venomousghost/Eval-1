@@ -9,20 +9,20 @@ const Collapse = () => {
   };
 
   return (
-    <div className="main-cover">
-      <div className="cover">
-        <div className="text">
-          <div className="h1">
+    <div className="X-main-cover">
+      <div className="X-cover">
+        <div className="X-text">
+          <div className="X-h1">
             Step Into the Arena of Champions.
           </div>
-          <div className="p">
+          <div className="X-p">
             Get ready to compete in the ultimate gaming showdown! Join top players from around the globe,
             prove your skills, and claim your victory.
           </div>
 
           <button 
-            className={`button ${isHidden ? '' : 'btn-style'}`} 
-            id="show-btn" 
+            className={`X-button ${isHidden ? '' : 'X-btn-style'}`} 
+            id="X-show-btn" 
             onClick={toggleContent}
           >
             Read More
@@ -30,15 +30,15 @@ const Collapse = () => {
 
           {/* Hidden content that toggles visibility */}
           <div 
-            id="hidden-content" 
-            className={isHidden ? 'hidden-class-content' : ''}
+            id="X-hidden-content" 
+            className={isHidden ? 'X-hidden-class-content' : ''}
           >
             This is where champions are made—are you ready to rise to the challenge?
           </div>
         </div>
       </div>
 
-      <div className="image">
+      <div className="X-image">
         <img 
           src="https://wallpapers.com/images/high/gaming-tournaments-1920-x-1080-wallpaper-rruvjrl0xdiqcr4l.webp" 
           alt="Gaming Studio" 

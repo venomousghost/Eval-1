@@ -1,16 +1,16 @@
-.carousel {
+.X-carousel {
     width: 100%;
     height: 100vh;
     overflow: hidden;
     position: relative;
 }
 
-.carousel-inner {
+.X-carousel-inner {
     position: absolute;
     inset: 0 0 0 0;
 }
 
-.carousel-content img {
+.X-carousel-content img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -25,22 +25,24 @@
     }
 }
 
-.carousel-inner h1, .carousel-inner p, .carousel-inner button {
+.X-carousel-inner h1, 
+.X-carousel-inner p, 
+.X-carousel-inner button {
     transform: translateY(50px);
     filter: blur(5px);
     opacity: 0;
     animation: showContent .5s .5s linear forwards;
 }
 
-.carousel-inner h1 {
+.X-carousel-inner h1 {
     animation-delay: .8s;
 }
 
-.carousel-inner p {
+.X-carousel-inner p {
     animation-delay: .7s;
 }
 
-.carousel-text {
+.X-carousel-text {
     position: absolute;
     top: 30%;
     max-width: 50%;
@@ -48,19 +50,19 @@
     transform: translateX(-50%);
 }
 
-.carousel-text h1 {
+.X-carousel-text h1 {
     font-size: 50px;
     font-weight: 800;
     color: #f9f5f5;
 }
 
-.carousel-text p {
+.X-carousel-text p {
     font-size: 20px;
     color: whitesmoke;
     text-shadow: black 2px 2px;
 }
 
-.carousel-text button {
+.X-carousel-text button {
     padding: 10px 20px;
     font-weight: 700;
     color: #f9f5f5;
@@ -68,12 +70,12 @@
     background-color: rgb(216, 44, 75);
 }
 
-.carousel-text button:hover {
+.X-carousel-text button:hover {
     color: black;
     background-color: white;
 }
 
-.arrows {
+.X-arrows {
     position: absolute;
     width: 100px;
     right: 5%;
@@ -83,7 +85,7 @@
     z-index: 2;
 }
 
-.arrows button {
+.X-arrows button {
     width: 40px;
     height: 40px;
     border: none;
@@ -95,20 +97,13 @@
     transition: .5s;
 }
 
-.arrows button:hover {
+.X-arrows button:hover {
     background-color: #eee;
     color: #555;
 }
 
-
-
-
-
-
-
-
-
-.main-cover {
+/* Main Cover */
+.X-main-cover {
     margin-top: 130px;
     display: flex;
     justify-content: space-around;
@@ -118,27 +113,27 @@
     margin-left: 160px;
 }
 
-.cover {
+.X-cover {
     width: 50%;
     height: 340px;
     display: flex;
 }
 
-.image {
+.X-image {
     width: 50%;
 }
 
-.image img {
+.X-image img {
     width: 100%;
     height: 360px;
 }
 
-.text {
+.X-text {
     display: flex;
     flex-direction: column;
 }
 
-.text .button {
+.X-text .X-button {
     margin-top: 30px;
     width: 22%;
     background-color: #f9f5f5;
@@ -152,7 +147,7 @@
     transition: all .3s ease;
 }
 
-#hidden-content {
+#X-hidden-content {
     margin-top: 20px;
     width: 500px;
     opacity: 0;
@@ -160,42 +155,42 @@
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-#hidden-content.hidden-class-content {
+#X-hidden-content.X-hidden-class-content {
     opacity: 1;
     visibility: visible;
 }
 
-.text .button:hover {
+.X-text .X-button:hover {
     background-color: #f9f5f5;
     color: rgb(216, 44, 75);
 }
 
-.text .btn-style {
+.X-text .X-btn-style {
     transition: border 1s ease;
     border: none;
     border-top: 1px solid black;
     border-right: 1px solid black;
 }
 
-.text .button:focus {
+.X-text .X-button:focus {
     outline: none;
 }
 
-.text .btn {
+.X-text .X-btn {
     border: none;
     box-shadow: none;
 }
 
-.main-col-btn {
+.X-main-col-btn {
     width: 80%;
 }
 
-.text .btn:active {
+.X-text .X-btn:active {
     box-shadow: none;
     border: none;
 }
 
-.h1 {
+.X-h1 {
     width: 70%;
     color: rgb(216, 44, 75);
     font-size: 45px;
@@ -203,16 +198,8 @@
     font-family: sans-serif;
 }
 
-.p {
+.X-p {
     color: black;
     width: 75%;
     margin-top: 15px;
 }
-
-
-
-
-
-
-
-

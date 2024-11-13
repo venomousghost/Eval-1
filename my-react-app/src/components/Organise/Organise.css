@@ -1,4 +1,4 @@
-.main {
+.X-main {
     width: 100%;
     height: 100vh;
     background-image: url("./Tournament/image\ \(1\).webp");
@@ -7,13 +7,13 @@
     justify-content: center;
 }
 
-.main-wrap {
+.X-main-wrap {
     width: 85%;
     height: 100vh;
     display: flex;
 }
 
-.main-text {
+.X-main-text {
     height: 100vh;
     width: 65%;
     display: flex;
@@ -21,14 +21,14 @@
     justify-content: center;
 }
 
-.main-form {
+.X-main-form {
     display: flex;
     align-items: center;
     height: 100vh;
     width: 35%;
 }
 
-.main-text .h1 {
+.X-main-text .X-h1 {
     font-size: 45px;
     color: white;
     font-weight: 700;
@@ -37,7 +37,7 @@
     margin-bottom: 25px;
 }
 
-.main-text .p {
+.X-main-text .X-p {
     width: 88%;
     font-size: 25px;
     font-family: sans-serif;
@@ -46,18 +46,18 @@
     margin-bottom: 45px;
 }
 
-.trust {
+.X-trust {
     color: white;
     font-weight: 600;
     font-family: sans-serif;
     font-size: 18px;
 }
 
-.main-text .btn {
+.X-main-text .X-btn {
     margin-top: 60px;
 }
 
-.main-text button {
+.X-main-text button {
     border: 2px solid rgb(179, 174, 174);
     background-color: transparent;
     color: white;
@@ -67,11 +67,11 @@
     border-radius: 4px;
 }
 
-.main-text button:hover {
+.X-main-text button:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.main1 {
+.X-main1 {
     width: 100%;
     height: 110vh;
     display: flex;
@@ -79,7 +79,7 @@
     margin-top: 50px;
 }
 
-.main-wrap1 {
+.X-main-wrap1 {
     width: 85%;
     display: flex;
     height: 100vh;
@@ -87,7 +87,7 @@
     gap: 15px;
 }
 
-.main-wrap1 .card {
+.X-main-wrap1 .X-card {
     width: 100%;
     border-radius: 15px;
     height: 400px;
@@ -97,31 +97,31 @@
     justify-content: center;
 }
 
-.main-wrap1 .card1 {
+.X-main-wrap1 .X-card1 {
     height: 500px;
     background: linear-gradient(90.52deg, rgb(24, 24, 27) 52.16%, rgba(24, 24, 27, 0) 95.48%), url(Tournament/service-bg-image-0.jpg) no-repeat right;
 }
 
-.main-wrap1 .card3 {
+.X-main-wrap1 .X-card3 {
     height: 500px;
     background: linear-gradient(90.52deg, rgb(24, 24, 27) 52.16%, rgba(24, 24, 27, 0) 95.48%), url(Tournament/service-bg-image-5.jpg) no-repeat right;
 }
 
-.main-wrap1 .card4 {
+.X-main-wrap1 .X-card4 {
     height: 500px;
     background: linear-gradient(90.52deg, rgb(24, 24, 27) 52.16%, rgba(24, 24, 27, 0) 95.48%), url(Tournament/service-bg-image-3.jpg) no-repeat right;
 }
 
-.main-wrap1 .card5 {
+.X-main-wrap1 .X-card5 {
     height: 500px;
     background: linear-gradient(90.52deg, rgb(24, 24, 27) 52.16%, rgba(24, 24, 27, 0) 95.48%), url(Tournament/service-bg-image-6.jpg) no-repeat right;
 }
 
-.card-text {
+.X-card-text {
     margin-left: 30px;
 }
 
-.card .h11 {
+.X-card .X-h11 {
     width: 700px;
     font-size: 22px;
     font-weight: 900;
@@ -131,7 +131,7 @@
     margin-bottom: 20px;
 }
 
-.card .h33 {
+.X-card .X-h33 {
     width: 800px;
     font-size: 16px;
     font-weight: 200;
@@ -139,7 +139,7 @@
     color: white;
 }
 
-.form {
+.X-form {
     height: 60px;
     width: 100%;
     display: flex;
@@ -148,21 +148,21 @@
     color: white;
 }
 
-.form .h1 {
+.X-form .X-h1 {
     font-size: 36px;
     font-weight: 700;
     text-align: center;
     font-family: sans-serif;
 }
 
-.form .h3 {
+.X-form .X-h3 {
     font-family: sans-serif;
     font-size: 22px;
     font-weight: 300;
     text-align: center;
 }
 
-.form-container {
+.X-form-container {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 8px;

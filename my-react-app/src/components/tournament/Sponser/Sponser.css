@@ -1,7 +1,4 @@
-
-
-.colaborator {
-
+.X-colaborator {
     background-image: url("./Tournament/back1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,32 +11,34 @@
     gap: 60px;
     height: 70vh;
 }
-.colaborator h1 {
+
+.X-colaborator h1 {
     margin-top: 40px;
     font-size: 30px;
-    color:white;
+    color: white;
     font-weight: 700;
 }
 
-.first-row {
+.X-first-row {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.second-row {
+.X-second-row {
     width: 80%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.img img {
+.X-img img {
     width: 120px;
     height: 120px;
     border-radius: 15px;
 }
 
-.h3{
-    color:rgb(216, 44, 75)
+.X-h3 {
+    color: rgb(216, 44, 75);
 }
+
 /* linear-gradient(to right, rgba(15, 15, 15, .8) 0, #540e0f 50%, rgba(15, 15, 15, .8) 100%); */

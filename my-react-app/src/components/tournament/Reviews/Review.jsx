@@ -31,11 +31,11 @@ const reviewsData = [
 
 // Review Card Component
 const ReviewCard = ({ icon, image }) => (
-  <div className="review-card1">
-    <div className="icon">
+  <div className="X-review-card1">
+    <div className="X-icon">
       <img src={icon} alt="Twitter Icon" />
     </div>
-    <div className="img">
+    <div className="X-img">
       <img src={image} alt="Player Review" />
     </div>
   </div>
@@ -43,10 +43,10 @@ const ReviewCard = ({ icon, image }) => (
 
 const Review = () => {
   return (
-    <div className="reviews">
-      <div className="h1">HAPPY PLAYERS</div>
-      <div className="slidee">
-        <div className="review-card">
+    <div className="X-reviews">
+      <div className="X-h1">HAPPY PLAYERS</div>
+      <div className="X-slidee">
+        <div className="X-review-card">
           {reviewsData.map((review, index) => (
             <ReviewCard key={index} icon={review.icon} image={review.image} />
           ))}

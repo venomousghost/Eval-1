@@ -5,6 +5,8 @@ import Cart from "./components/cart/Cart";
 import Contact from "./components/Contact/Contact"
 import Library from "./components/Library/Library"
 // import ProfilePage from "./components/ProfilePage/ProfilePage";
+//import Tournament from "./components/tournament/Tournament";
+import Organise from "./components/Organise/Organise";
 function App(){
   const router = createBrowserRouter([
     {
@@ -27,10 +29,18 @@ function App(){
       path: '/Library',
       element:<Library/>
     },
+    //  {
+    //    path: '/Profile',
+    //    element:<ProfilePage/>
+    //  },
     // {
-    //   path: '/Profile',
-    //   element:<ProfilePage/>
+    //   path: '/Tournament',
+    //   element:<Tournament/>
     // },
+     {
+       path: '/Organise',
+       element:<Organise/>
+     },
   ]);
   return(
     <RouterProvider router={router}/>

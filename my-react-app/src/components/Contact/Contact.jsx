@@ -80,6 +80,7 @@ const ContactUs = () => {
                   <input
                     type="text"
                     id="fullname"
+                    
                     placeholder="Full name"
                     className='blue'
                     value={formData.fullname}
@@ -124,9 +125,9 @@ const ContactUs = () => {
 
               <div className="text2x">
                 <h3>Contact</h3>
-                <p>Gamingsphere@gmail.com</p>
-                <h3>Based in</h3>
-                <p>Rajpura,<br />Punjab, India</p>
+                <p >Gamingsphere@gmail.com</p>
+                <h3 >Based in</h3>
+                <p >Rajpura,<br />Punjab, India</p>
                 <div className="iconsx">
                   <div className='hi'>
                   <FontAwesomeIcon icon={faFacebook} size='2xl' />

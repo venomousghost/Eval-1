@@ -19,7 +19,7 @@ const Cart = () => {
     const valoTotal = valoQuantity * VALO_PRICE;
     const ctTotal = ctQuantity * CT_PRICE;
     const calculatedSubTotal = valoTotal + ctTotal;
-    const calculatedTax = calculatedSubTotal * 0.1;
+    const calculatedTax = calculatedSubTotal /10;
     const calculatedTotal = calculatedSubTotal + calculatedTax;
 
     setSubTotal(calculatedSubTotal);
